@@ -11,8 +11,8 @@ p {
 footer {
   background-image: linear-gradient(white, #323b8a);
 }
-#rightFooter {
-  text-align: right;
+li {
+  font-size: 30px;
 }
 #name {
   font: optional;

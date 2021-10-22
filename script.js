@@ -39,3 +39,6 @@ function revealMusic() {
     }
   };
 }
+function openInNewTab(url){
+  window.open("media/CVOfMxolisiSibaya.pdf", '_blank').focus();
+}
