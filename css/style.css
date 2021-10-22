@@ -94,6 +94,7 @@ body {
   grid-column-gap: 40px;
   justify-self: center;
   align-self: center;
+  width: fit-content;
 }
 #tag {
   font-family: monospace;
@@ -111,16 +112,16 @@ button {
   background-image: linear-gradient(white, #323b8a);
   text-align: center;
   font-size: 20px;
+  cursor: pointer;
 }
+
 #musicTab {
   display: none;
 }
 #music {
   background-image: linear-gradient(white, #6f78ca);
 }
-#musicPlay {
-  cursor: pointer;
-}
+
 #play {
   cursor: pointer;
   width: "40";
@@ -131,4 +132,29 @@ button {
 }
 .hide {
   display: none;
+}
+
+@media (max-width: 600px) {
+  .myTabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    width: 70%;
+    justify-content: center;
+  }
+  #SubTopics {
+    font-size: 25px;
+  }
+  .qualification {
+    grid-template-columns: 100px 100px;
+    grid-column-gap: 20px;
+  }
+  #tag {
+    font-family: monospace;
+    background: white;
+    text-align: center;
+    font-size: 25px;
+  }
 }
