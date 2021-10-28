@@ -19,11 +19,11 @@ li {
   color: #323b87;
   text-align: center;
 }
-#socials {
+.socials {
   text-align: center;
   text-align: justify;
 }
-#logoz {
+.logoz {
   border-radius: 50%;
   width: 25px;
   height: 25px;
@@ -44,7 +44,7 @@ li {
 #About {
   text-align: center;
 }
-#SubTopics {
+.SubTopics {
   background-image: linear-gradient(white, #323b8a);
   text-align: center;
 }
@@ -123,7 +123,7 @@ button {
 #musicTab {
   display: none;
 }
-#music {
+.music {
   background-image: linear-gradient(white, #6f78ca);
 }
 
