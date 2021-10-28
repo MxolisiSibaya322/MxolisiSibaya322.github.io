@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html>
- 
+<html lang="en">
   <head>
     <title>Mxolisi Sibaya : A student of code</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
     <script src="script.js"></script>
-    <link rel="icon" href="media/MUGSHOT.jpg">
+    <link rel="icon" href="media/MUGSHOT.jpg" />
     <meta name="viewport" content="width=device-width" />
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
   </head>
 
   <body>
     <div>
       <header>
-        <img id="centers" src="media/MUGSHOT.jpg" width="250" height="250" alt = "Mugshot" /> 
-        <h1 id="name">Mxolisi Sibaya <br> <button id="CV" onclick=openInNewTab()>View CV/RESUME</button></h1>
+        <img
+          id="centers"
+          src="media/MUGSHOT.jpg"
+          width="250"
+          height="250"
+          alt="Mugshot"
+        />
+        <h1 id="name">
+          Mxolisi Sibaya <br />
+          <button id="CV" onclick="openInNewTab()">View CV/RESUME</button>
+        </h1>
         <h2 id="subHeader">Web Developer</h2>
       </header>
     </div>
@@ -22,44 +30,69 @@
       <input type="radio" id="HOME" name="myTabs" checked="checked" />
       <label for="HOME">HOME</label>
       <div class="tab">
-      
         <div>
-          <br>
+          <br />
         </div>
         <div class="qualification">
           <div class="labeling">FULL NAME :</div>
-          <div class="answers"> MXOLISI SIBAYA </div>
+          <div class="answers">MXOLISI SIBAYA</div>
           <div class="labeling">PLACE OF BIRTH :</div>
-          <div class="answers">ORLANDO WEST,SOWETO. </div>
+          <div class="answers">ORLANDO WEST,SOWETO.</div>
           <div class="labeling">Country of Birth :</div>
-          <div class="answers"> SOUTH AFRICA</div>
+          <div class="answers">SOUTH AFRICA</div>
           <div class="labeling">HOBBIES :</div>
-          <div class="answers"> SOCCER, READING NOVELS & <br> <button id="musicPlay" onclick="revealMusic()">MUSIC PRODUCTION <br>(CLICK HERE)</button></div>
-          
-          
-         </div>
+          <div class="answers">
+            SOCCER, READING NOVELS & <br />
+            <button id="musicPlay" onclick="revealMusic()">
+              MUSIC PRODUCTION <br />(CLICK HERE)
+            </button>
+          </div>
+        </div>
 
+        <div id="musicTab">
+          <p class="music">
+            In my spare time,I make music. My stage name is Flowie and I will
+            share two of my songs with you.<br />
+            <br />
+            The first song is titled "Fede Macala" and it features my music mate
+            since High school: Nathi L. On this track, we view life from the
+            eyes of drug addicts who live in the township.Click play to hear the
+            track,enjoy! &#128522;
+          </p>
+          <p class="music">
+            <img
+              id="play"
+              src="media/play.png"
+              alt="play button"
+              width="40"
+              height="50"
+            />Flowie ft Nathi L- Fede Macala
+          </p>
 
-         <div id="musicTab">
-           <p id="music">In my spare time,I make music. My stage name is Flowie and I will share two of my songs with you.<br> <br> The first song is titled "Fede Macala" and it features my music mate since High school: Nathi L. On this track, we view life from the eyes of drug addicts who live in the township.Click play to hear the track,enjoy! &#128522: </p>
-               <p id="music"><img id="play" src="media/play.png" alt="play button" width="40" 
-                height="50">Flowie ft Nathi L- Fede Macala</p>
-          
           <audio id="mySongs">
-             <source src="media/fedeMacala.wav" type="audio/wav">
+            <source src="media/fedeMacala.wav" type="audio/wav" />
           </audio>
-         
-            <p  class="music">The next song I'm going to share with you is titled IKISR(short for I Keep It So Real).Click play to hear the track,enjoy! &#128522:</p>
-                <p class="music"><img id="play2" src="media/play.png" width="40" alt="play button 2" height="50">Flowie - IKISR</p>
-                 <audio id="mySong">
-                  <source src="media/Flowie-IKISO.wav" type="audio/wav">
-               </audio>
-           </div>
-           
-          <div class="labeling">Favourite Quote :</div>
-        <h1 id="tag">
-          "HAPPINESS IS AN INSIDE JOB"
-        </h1>
+
+          <p class="music">
+            The next song I'm going to share with you is titled IKISR(short for
+            I Keep It So Real).Click play to hear the track,enjoy! &#128522;
+          </p>
+          <p class="music">
+            <img
+              id="play2"
+              src="media/play.png"
+              width="40"
+              alt="play button 2"
+              height="50"
+            />Flowie - IKISR
+          </p>
+          <audio id="mySong">
+            <source src="media/Flowie-IKISO.wav" type="audio/wav" />
+          </audio>
+        </div>
+
+        <div class="labeling">Favourite Quote :</div>
+        <h1 id="tag">"HAPPINESS IS AN INSIDE JOB"</h1>
         <h3 id="author">~ A WISE MAN.</h3>
       </div>
       <input type="radio" id="BIO" name="myTabs" />
@@ -78,59 +111,72 @@
       <label for="SKILLS">SKILLS</label>
       <div class="tab">
         <h1 class="SubTopics">SKILLS</h1>
-       Java Programming<br>
-       SQL<br>
-       JavaScript Programming<br>
-       HTML & HTML5<br>
-       CSS<br>
-       C++<br>
-       Visual Basic<br>
+        Java Programming<br />
+        SQL<br />
+        JavaScript Programming<br />
+        HTML & HTML5<br />
+        CSS<br />
+        C++<br />
+        Visual Basic<br />
       </div>
       <input type="radio" id="EDUCATIONAL_QUALIFICATIONS" name="myTabs" />
       <label for="EDUCATIONAL_QUALIFICATIONS">EDUCATIONAL QUALIFICATIONS</label>
       <div class="tab">
         <h1 class="SubTopics">EDUCATIONAL QUALIFICATIONS</h1>
-       <div class="qualification">
-        <div class="labeling">HIGH SCHOOL :</div>
-        <div class="answers">Orlando West High School </div>
-        <div class="labeling">HIGHEST GRADE PASSED :</div>
-        <div class="answers">GRADE 12[MATRIC] </div>
-        <div class="labeling">NQF LEVEL :</div>
-        <div class="answers">LEVEL 4</div>
-        <div class="labeling">STREAM :</div>
-        <div class="answers">SCIENCE</div>
-        <div class="labeling">MATRIC YEAR :</div>
-        <div class="answers">2014</div>
-       </div>
+        <div class="qualification">
+          <div class="labeling">HIGH SCHOOL :</div>
+          <div class="answers">Orlando West High School</div>
+          <div class="labeling">HIGHEST GRADE PASSED :</div>
+          <div class="answers">GRADE 12[MATRIC]</div>
+          <div class="labeling">NQF LEVEL :</div>
+          <div class="answers">LEVEL 4</div>
+          <div class="labeling">STREAM :</div>
+          <div class="answers">SCIENCE</div>
+          <div class="labeling">MATRIC YEAR :</div>
+          <div class="answers">2014</div>
+        </div>
       </div>
       <input type="radio" id="projects" name="myTabs" />
       <label for="projects">PROJECTS</label>
       <div class="tab">
         <h1 class="SubTopics">PROJECTS</h1>
         <p>
-          I am yet to work on a big project but I look forward to doing so. &#8987: Once I have, I will list my projects on this tab. &#128077:
+          I am yet to work on a big project but I look forward to doing so.
+          &#8987; Once I have, I will list my projects on this tab. &#128077;
         </p>
       </div>
     </div>
   </body>
-  
-    <footer>
-      <h3 class="socials">
-        <img class="logoz" src="media/download.png" width="50" height="50" alt="logos"/><a
-        href="https://mxolisi.sibaya@umuzi.org/"
-        >
-        mxolisi.sibaya@umuzi.org</a> <h3 class="socials">
-          <img class="logoz" src="media/174857.png" width="80" height="80" alt="logos 2"/><a
-            href="https://www.linkedin.com/in/mxolisi-sibaya-63283b15b/"
-            >Mxolisi Sibaya</a
-          >
-        </h3> 
-      <h3 class="socials">
-        <img class="logoz" src="media/580b57fcd9996e24bc43c53e.png" width="50" height="50" alt="logos 2"/><a
-          href="https://twitter.com/MxolisiSibaya"
-          >@MxolisiSibaya</a
-        >
-      </h3>   
-    </footer>
-  
+
+  <footer>
+    <h3 class="socials">
+      <img
+        class="logoz"
+        src="media/download.png"
+        width="50"
+        height="50"
+        alt="logos"
+      /><a href="https://mxolisi.sibaya@umuzi.org/">
+        mxolisi.sibaya@umuzi.org</a
+      >
+      <img
+        class="logoz"
+        src="media/174857.png"
+        width="80"
+        height="80"
+        alt="logos 2"
+      /><a href="https://www.linkedin.com/in/mxolisi-sibaya-63283b15b/"
+        >Mxolisi Sibaya</a
+      >
+    </h3>
+    <h3 class="socials">
+      <img
+        class="logoz"
+        src="media/580b57fcd9996e24bc43c53e.png"
+        width="50"
+        height="50"
+        alt="logos 2"
+      /><a href="https://twitter.com/MxolisiSibaya">@MxolisiSibaya</a>
+    </h3>
+  </footer>
 </html>
