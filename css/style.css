@@ -66,16 +66,13 @@ body {
   display: none;
   text-align: center;
 }
-.myTabs label {
-  justify-content: center;
-  width: auto;
-  border-bottom: 1px solid linear-gradient(white, #323b8a);
-  padding: 25px;
-  background-image: linear-gradient(white, #323b8a);
-  font-weight: bold;
-  cursor: pointer;
-}
 
+#author {
+  font-style: italic;
+  background: white;
+  text-align: center;
+  text-shadow: royalblue;
+}
 .myTabs .tab {
   width: 100%;
   padding: 20px;
@@ -107,16 +104,13 @@ body {
   text-align: center;
   font-size: 50px;
 }
-#author {
-  font-style: italic;
-  background: white;
-  text-align: center;
-  text-shadow: royalblue;
-}
-button {
+.myTabs label {
+  justify-content: center;
+  width: auto;
+  border-bottom: 1px solid linear-gradient(white, #323b8a);
+  padding: 25px;
   background-image: linear-gradient(white, #323b8a);
-  text-align: center;
-  font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
 }
 
@@ -138,28 +132,152 @@ button {
 .hide {
   display: none;
 }
+button {
+  background-image: linear-gradient(white, #323b8a);
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
 
 @media (max-width: 600px) {
+  eader {
+    font-size: 30px;
+    font-family: "Times New Roman", Times, serif;
+    background-color: white;
+    background-image: linear-gradient(white, #323b8a);
+  }
+  p {
+    background-color: white;
+    font-size: 30px;
+  }
+  footer {
+    background-image: linear-gradient(white, #323b8a);
+  }
+  li {
+    font-size: 30px;
+  }
+  #name {
+    font: optional;
+    color: #323b87;
+    text-align: center;
+  }
+  .socials {
+    text-align: center;
+    text-align: justify;
+  }
+  .logoz {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+  #centers {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+    border-style: dotted;
+    border-color: #141c5f;
+  }
+  #subHeader {
+    text-align: center;
+    display: block;
+  }
+  #About {
+    text-align: center;
+  }
+  .SubTopics {
+    background-image: linear-gradient(white, #323b8a);
+    text-align: center;
+  }
+  body {
+    font-family: "Times New Roman", Times, serif;
+  }
   .myTabs {
     display: grid;
     flex-wrap: wrap;
     max-width: 900px;
     margin: 50px auto;
     padding: 25px;
-    width: 70%;
+    width: 100%;
     justify-content: center;
+    grid-template-columns: repeat(5, 100px);
+    grid-template-rows: repeat(5, 50px);
   }
-  #SubTopics {
-    font-size: 25px;
+  .myTabs input[type="radio"] {
+    display: none;
+    text-align: center;
+  }
+  
+  #author {
+    font-style: italic;
+    background: white;
+    text-align: center;
+    text-shadow: royalblue;
+  }
+  .myTabs .tab {
+    width: 100%;
+    padding: 20px;
+    display: none;
+    order: 1;
+    background-image: linear-gradient(white, #323b8a);
+    font-size: 150%;
+  }
+  .myTabs input[type="radio"]:checked + label + .tab {
+    display: block;
+  }
+  .myTabs {
+    display: flex;
+  }
+  .myTabs input[type="radio"]:checked + label {
+    background-image: linear-gradient(white, #6f78ca);
   }
   .qualification {
-    grid-template-columns: 100px 100px;
-    grid-column-gap: 20px;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-column-gap: 40px;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
   }
   #tag {
     font-family: monospace;
     background: white;
     text-align: center;
-    font-size: 25px;
+    font-size: 50px;
+  }
+  .myTabs label {
+    justify-content: center;
+    width: auto;
+    border-bottom: 1px solid linear-gradient(white, #323b8a);
+    padding: 25px;
+    background-image: linear-gradient(white, #323b8a);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  #musicTab {
+    display: none;
+  }
+  .music {
+    background-image: linear-gradient(white, #6f78ca);
+  }
+  
+  #play {
+    cursor: pointer;
+    width: "40";
+    height: "50";
+  }
+  #play2 {
+    cursor: pointer;
+  }
+  .hide {
+    display: none;
+  }
+  button {
+    background-image: linear-gradient(white, #323b8a);
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
   }
 }
