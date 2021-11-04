@@ -59,8 +59,7 @@ body {
   padding: 25px;
   width: 100%;
   justify-content: center;
-  grid-template-columns: repeat(5, 100px);
-  grid-template-rows: repeat(5, 50px);
+  grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .myTabs input[type="radio"] {
   display: none;
@@ -97,6 +96,7 @@ body {
   justify-self: center;
   align-self: center;
   width: fit-content;
+  
 }
 #tag {
   font-family: monospace;
@@ -140,7 +140,7 @@ button {
 }
 
 @media (max-width: 600px) {
-  eader {
+  header {
     font-size: 30px;
     font-family: "Times New Roman", Times, serif;
     background-color: white;
@@ -201,14 +201,14 @@ button {
     padding: 25px;
     width: 100%;
     justify-content: center;
-    grid-template-columns: repeat(5, 100px);
-    grid-template-rows: repeat(5, 50px);
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 100%;
   }
   .myTabs input[type="radio"] {
     display: none;
     text-align: center;
   }
-  
+
   #author {
     font-style: italic;
     background: white;
@@ -255,14 +255,14 @@ button {
     font-weight: bold;
     cursor: pointer;
   }
-  
+
   #musicTab {
     display: none;
   }
   .music {
     background-image: linear-gradient(white, #6f78ca);
   }
-  
+
   #play {
     cursor: pointer;
     width: "40";
