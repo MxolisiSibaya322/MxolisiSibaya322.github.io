@@ -96,7 +96,6 @@ body {
   justify-self: center;
   align-self: center;
   width: fit-content;
-  
 }
 #tag {
   font-family: monospace;
@@ -234,7 +233,7 @@ button {
   }
   .qualification {
     display: grid;
-    grid-template-columns: 300px 300px;
+    grid-template-columns: 150px 100px;
     grid-column-gap: 40px;
     justify-self: center;
     align-self: center;
