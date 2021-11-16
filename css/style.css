@@ -56,7 +56,6 @@ body {
   flex-wrap: wrap;
   max-width: 900px;
   margin: 50px auto;
-  padding: 25px;
   width: 100%;
   justify-content: center;
   grid-template-columns: 20% 20% 20% 20% 20%;
@@ -188,6 +187,7 @@ button {
   .SubTopics {
     background-image: linear-gradient(white, #323b8a);
     text-align: center;
+    font-size: 40px;
   }
   body {
     font-family: "Times New Roman", Times, serif;
@@ -216,11 +216,10 @@ button {
   }
   .myTabs .tab {
     width: 100%;
-    padding: 20px;
     display: none;
     order: 1;
     background-image: linear-gradient(white, #323b8a);
-    font-size: 150%;
+    font-size: 110%;
   }
   .myTabs input[type="radio"]:checked + label + .tab {
     display: block;
