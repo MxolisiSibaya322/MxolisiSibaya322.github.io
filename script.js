@@ -40,5 +40,5 @@ function revealMusic() {
   };
 }
 function openInNewTab(){
-  window.open("media/CVOfMxolisiSibaya.pdf", '_blank').focus();
+  window.open("media/MxolisiCV.pdf", '_blank').focus();
 }
