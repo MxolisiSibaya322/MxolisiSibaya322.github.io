@@ -25,6 +25,66 @@ footer {
   color: #fbfcfd;
   text-align: center;
 }
+/* .content{
+  position  :absolute;
+  top: 50%;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+} */
+.bubble img{
+  width: 5%;
+  animation: bubble 7s linear infinite;
+}
+.bubble{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -40px;
+}
+@keyframes bubble {
+  0%{
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  70%{
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+.bubble img:nth-child(1){
+  width: 1%;
+  animation-delay: 2s;
+}
+.bubble img:nth-child(2){
+  width: 4%;
+  animation-delay: 3s;
+}
+.bubble img:nth-child(3){
+  width: 6%;
+  animation-delay: 4.5s;
+}
+.bubble img:nth-child(4){
+  width: 2%;
+  animation-delay: 5.5s;
+}
+.bubble img:nth-child(5){
+  animation-delay: 2.5s;
+}
+.bubble img:nth-child(6){
+  animation-delay: 3.5s;
+}
+.bubble img:nth-child(7){
+  animation-delay: 5.s;
+}
 .socials {
   text-align: right;
   text-align: justify;
