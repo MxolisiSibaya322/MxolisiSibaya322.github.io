@@ -1,6 +1,6 @@
 header {
   font-size: 30px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Gruppo';font-size: 22px;
   background-color: white;
   background-image: linear-gradient(white, #323b8a);
 }
@@ -9,7 +9,11 @@ p {
   font-size: 30px;
 }
 footer {
-  background-image: linear-gradient(white, #323b8a);
+  background-image: url('../media/background.png');
+  background-size: cover;
+  background-position :center;
+  position : relative;
+  overflow: hidden;
 }
 #CV{
  color: #fbfcfd;
@@ -21,6 +25,7 @@ footer {
  cursor: pointer;
 }
 #name {
+  font-family: 'Merienda';
   font: optional;
   color: #fbfcfd;
   text-align: center;
@@ -92,13 +97,21 @@ footer {
 
 .logoz {
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 55px;
+   text-align: left;
+  margin-left: auto;
+  margin-right:300px;
+    display: block;
 }
 .github{
   border-radius: 60%;
-  width: 35px;
-  height: 25px;
+  width: 50px;
+  height: 55px;
+   text-align: center;
+  margin-left: 300px;
+  margin-right: auto;
+  display: block;
 }
 header{
   width: 100%;
@@ -131,7 +144,7 @@ header{
   text-align: center;
 }
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Merienda';
 }
 .myTabs {
   display: grid;
@@ -278,6 +291,7 @@ button {
     border-radius: 50%;
     width: 25px;
     height: 25px;
+     cursor: pointer;
   }
   .github{
     border-radius: 60%;
