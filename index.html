@@ -11,25 +11,144 @@
   </head>
 
   <body>
-   
-   <div class="header">
-     <div class="nav">
-        <img
-          id="centers"
-          src="media/MUGSHOT.jpg"
-          width="250"
-          height="250"
-          alt="Mugshot"
-        />
+    <div class="container">
+        <div class="hero" id="home">
+          <nav>
+            <img src="media/logo.png" alt="logo"
+            width="200"
+              height="130"
+            >
         <ul>
-          <li><a href="#" >Home</a></li>
-           <li><a href="#" >Bio</a></li>
-            <li><a href="#" >Skills</a></li>
-            <li><a href="#" >Qualifications</a></li>
-             <li><a href="#" >Projects</a></li>
+          <li><a href="#home" >Home</a></li>
+           <li><a href="#Bio" >Bio</a></li>
+            <li><a href="#Skills" >Skills</a></li>
+            <li><a href="#Qualifications" >Qualifications</a></li>
+             <li><a href="#Projects" >Projects</a></li>
         </ul>
+        </nav>
+        <div class="details">
+          <h1>Hi, I'm Mxolisi <span>Sibaya</span></h1>
+          <p>This is my official online portfolio</p>
+          <a href="#" >View My CV</a>
+        </div>
+        <div class="images">
+         <img src="media/shape.png" class="shape">
+         <img src="media/MUGSHOT.png" class="mxolisi">
+        </div> 
      </div>
-   </div>
+     <section id="Bio" >
+     <div class="tab">
+         <h1 class="SubTopics">BIO</h1>
+         <br>
+        <p>
+          I am a hardworking and outgoing 24 years young man who is always
+          looking for a new challenge that will allow me to aquire skills that
+          will enable me to get better at what I do. I am more than willing to
+          learn new things. I am currently part of C28 UMUZI under web
+          development.
+        </p>
+       
+        <div>
+          
+        </div>
+        <div class="qualification">
+          <div class="labeling">Full Name :</div>
+          <div class="answers">Mxolisi Sibaya</div>
+          <div class="labeling">Place Of Birth :</div>
+          <div class="answers">Orlando West,Soweto.</div>
+          <div class="labeling">Country Of Birth :</div>
+          <div class="answers">South Africa</div>
+          <div class="labeling">Hobbies :</div>
+          <div class="answers">
+            Soccer, Reading Novels & <br />
+            <button id="musicPlay" onclick="revealMusic()">
+              Music production <br />(CLICK HERE)
+            </button>
+          </div>
+        </div>
+
+        <div id="musicTab">
+          <p class="music">
+            In my spare time,I make music. My stage name is Flowie and I will
+            share two of my songs with you.<br />
+            <br />
+            The first song is titled "Fede Macala" and it features my music mate
+            since High school: Nathi L. On this track, we view life from the
+            eyes of drug addicts who live in the township.Click play to hear the
+            track,enjoy! &#128522;
+          </p>
+          <p class="music">
+            <img
+              id="play"
+              src="media/play.png"
+              alt="play button"
+              width="40"
+              height="50"
+            />Flowie ft Nathi L- Fede Macala
+          </p>
+
+          <audio id="mySongs">
+            <source src="media/fedeMacala.wav" type="audio/wav" />
+          </audio>
+
+          <p class="music">
+            The next song I'm going to share with you is titled IKISR(short for
+            I Keep It So Real).Click play to hear the track,enjoy! &#128522;
+          </p>
+          <p class="music">
+            <img
+              id="play2"
+              src="media/play.png"
+              width="40"
+              alt="play button 2"
+              height="50"
+            />Flowie - IKISR
+          </p>
+          <audio id="mySong">
+            <source src="media/Flowie-IKISO.wav" type="audio/wav" />
+          </audio>
+        </div>
+     </section>
+     <section id="Skills" >
+       <div class="tab">
+      <h1 class="SubTopics">SKILLS</h1>
+        Java Programming<br />
+        SQL<br />
+        JavaScript Programming<br />
+        HTML & HTML5<br />
+        CSS<br />
+        C++<br />
+        Visual Basic<br />
+        </div>
+     </section>
+     <section id="Qualifications" >
+     <div class="tab">
+        <h1 class="SubTopics">EDUCATIONAL QUALIFICATIONS</h1>
+        <div class="qualification">
+          <div class="labeling">High School :</div>
+          <div class="answers">Orlando West Hogh</div>
+          <div class="labeling">Highest Grade Passed :</div>
+          <div class="answers">Grade 12[Matric]</div>
+          <div class="labeling">NQF Level :</div>
+          <div class="answers">Level 4</div>
+          <div class="labeling">Stream :</div>
+          <div class="answers">Science</div>
+          <div class="labeling">Matric Year :</div>
+          <div class="answers">2014</div>
+        </div>
+      </div>
+     </section>
+     <section id="Projects" >
+     <div class="tab">
+        <h1 class="SubTopics">PROJECTS</h1>
+        <p>
+          I am yet to work on a big project but I look forward to doing so.
+          &#8987; Once I have, I will list my projects on this tab. &#128077;
+        </p>
+      </div>
+     </section>
+     </div>
+  
 
 
 

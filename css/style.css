@@ -1,4 +1,113 @@
-header {
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+font-family: Arial, Helvetica, sans-serif;
+line-height: 1.6;
+height: 100vh;
+overflow: hidden;
+}
+.container{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+.hero{
+  position: relative;
+ height: 100%;
+  width: 100%;
+  background-image: #eff4fd;
+   scroll-snap-align: center;
+}
+nav{
+  display: flex;
+  width: 84%;
+  margin: auto;
+  padding: 20px 0;
+  align-content: center;
+  justify-content: space-between;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color: burlywood;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  scroll-snap-align: center;
+}
+.details{
+  margin-left: 6%;
+  margin-right: 22%;
+  margin-top: 20%;
+}
+.details h1{
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 20px;
+}
+.details a{
+  background: black;
+  color: burlywood;
+  padding: 10px 10px;
+  font-weight: bold;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 0;
+  border-radius: 5px;
+  text-decoration: none;
+}            
+span{
+  color: burlywood;
+}
+.images{
+  width: 35%;
+  height: 80%;
+  position: absolute;
+  bottom: 0%;
+  right: 100px;
+}
+.images img{
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: bottom 2s left 1s;
+}
+.images:hover .shape{
+  bottom: 40px;
+}
+.images:hover .mxolisi{
+  left: 45%;
+}
+
+
+
+
+
+
+
+
+/* header {
   font-size: 30px;
   font-family: 'Gruppo';font-size: 22px;
   background-color: white;
@@ -37,7 +146,7 @@ footer {
   transform: translateY(-50%);
   z-index: 2;
 } */
-.bubble img{
+/* .bubble img{
   width: 5%;
   animation: bubble 7s linear infinite;
 }
@@ -138,15 +247,13 @@ header{
 }
 #About {
   text-align: center;
-}
+}*/
 .SubTopics {
-  background-image: linear-gradient(white, #323b8a);
+  background-color: burlywood;
   text-align: center;
 }
-body {
-  font-family: 'Merienda';
-}
-.myTabs {
+
+/*.myTabs {
   display: grid;
   flex-wrap: wrap;
   margin: 50px auto;
@@ -165,20 +272,19 @@ body {
   background: white;
   text-align: center;
   text-shadow: royalblue;
-}
-.myTabs .tab {
-  width: 150%;
-  padding: 20px;
-  display: none;
-  order: 1;
- background-image: url('../media/background.png');
+}*/
+ .tab {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+ background-color: rgb(255, 255, 255);
   background-size: cover;
   background-position :center;
   position : relative;
-  overflow: hidden;
-  font-size: 150%;
-}
-.myTabs input[type="radio"]:checked + label + .tab {
+
+} 
+/* .myTabs input[type="radio"]:checked + label + .tab {
   display: block;
 }
 .myTabs {
@@ -190,7 +296,7 @@ body {
   background-position :center;
   position : relative;
   overflow: hidden;
-}
+}*/
 .qualification {
   display: grid;
   grid-template-columns: 300px 300px;
@@ -198,8 +304,11 @@ body {
   justify-self: center;
   align-self: center;
   width: fit-content;
+  padding: 20px;
+  margin-top: 15%;
+  font-size: 25px;
 }
-#tag {
+/*#tag {
   font-family: monospace;
   background: white;
   text-align: center;
@@ -340,8 +449,8 @@ button {
     background: white;
     text-align: center;
     text-shadow: royalblue;
-  }
-  .myTabs .tab {
+  } */
+  /* .myTabs .tab {
     width: 100%;
     display: none;
     order: 1;
@@ -379,7 +488,7 @@ button {
     background-image: linear-gradient(white, #323b8a);
     font-weight: bold;
     cursor: pointer;
-  }
+  }*/
 
   #musicTab {
     display: none;
@@ -405,4 +514,4 @@ button {
     font-size: 20px;
     cursor: pointer;
   }
-}
+
