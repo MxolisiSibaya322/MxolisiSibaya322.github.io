@@ -3,6 +3,8 @@ function revealMusic() {
   let button = document.getElementById("musicPlay");
   let counter = true;
 
+  window.open("./music.html", "_blank").focus();
+
   page.style.display = "block";
 
   button.onclick = function () {

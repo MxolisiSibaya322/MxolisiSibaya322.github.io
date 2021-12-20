@@ -12,9 +12,6 @@ overflow: hidden;
 .container{
   height: 100%;
   width: 100%;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
 }
 .hero{
   position: relative;
@@ -92,7 +89,10 @@ section{
   margin: 20px 0;
   border-radius: 5px;
   text-decoration: none;
-}            
+} 
+.details a:hover{
+  cursor: pointer;
+}           
 span{
   color: burlywood;
 }
@@ -174,8 +174,9 @@ footer {
   transform: translateY(-50%);
   z-index: 2;
 } */
-/* .bubble img{
+.bubble img{
   width: 5%;
+  filter: grayscale(10); 
   animation: bubble 7s linear infinite;
 }
 .bubble{
@@ -227,7 +228,7 @@ footer {
 .bubble img:nth-child(7){
   animation-delay: 5.s;
 }
-.socials {
+/*.socials {
   text-align: right;
   text-align: justify;
 }
@@ -302,16 +303,20 @@ header{
   text-shadow: royalblue;
 }*/
  .tab {
-  display: flex;
-  flex-direction: column;
+   display: grid;
+  /* display: flex;
+  flex-direction: column; */
   width: 100%;
-  height: 100%;
- background-color: rgb(255, 255, 255);
+  height: 100vh;
+ background-image: url('../media/background.png');
   background-size: cover;
   background-position :center;
-  position : relative;
-
+ position :relative;
+  overflow: hidden;
 } 
+.tab p{
+  font-size: 20px;
+}
 /* .myTabs input[type="radio"]:checked + label + .tab {
   display: block;
 }
@@ -333,7 +338,7 @@ header{
   align-self: center;
   width: fit-content;
   padding: 20px;
-  margin-top: 15%;
+  margin-top: 5%;
   font-size: 25px;
 }
 /*#tag {
@@ -350,10 +355,12 @@ header{
   background-image: linear-gradient(white, #323b8a);
   font-weight: bold;
   cursor: pointer;
-}
+}*/
 
 #musicTab {
-  display: none;
+  display: block;
+      height: 100vh;
+    width: 100%;
 }
 .music {
  background-image: url('../media/background.png');
@@ -362,7 +369,6 @@ header{
   position : relative;
   overflow: hidden;
 }
-
 #play {
   cursor: pointer;
   width: "40";
@@ -386,142 +392,7 @@ button {
   font-size: 20px;
 }
 
-@media (max-width: 600px) {
-  header {
-    font-size: 30px;
-    font-family: "Times New Roman", Times, serif;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../media/background.png');
-    background-size: cover;
-    background-position :center;
-    position : relative;
-    overflow: hidden;
-  }
-  #CV{
-    color: #fbfcfd;
-    padding: 10px 25px;
-    background: transparent;
-    border: 1px solid #fff;
-    border-radius: 20px;
-    outline: none;
-    cursor: pointer;
-   }
-  p {
-    background-color: white;
-    font-size: 30px;
-  }
-  footer {
-    background-image: linear-gradient(white, #323b8a);
-  }
- 
-  #name {
-    font: optional;
-    color: #fbfcfd;
-    text-align: center;
-  }
-  .socials {
-    text-align: center;
-    text-align: justify;
-  }
-  .logoz {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-     cursor: pointer;
-  }
-  .github{
-    border-radius: 60%;
-    width: 35px;
-    height: 25px;
-  }
-  #centers {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 50%;
-    border-style: dotted;
-    border-color: #141c5f;
-  }
-  #subHeader {
-    text-align: center;
-    display: block;
-  }
-  #About {
-    text-align: center;
-  }
-  .SubTopics {
-    background-image: linear-gradient(white, #323b8a);
-    text-align: center;
-    font-size: 40px;
-  }
-  body {
-    font-family: "Times New Roman", Times, serif;
-  }
-  .myTabs {
-    display: grid;
-    flex-wrap: wrap;
-    margin: 50px auto;
-    width: 100%;
-    justify-content: center;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-  }
-  .myTabs input[type="radio"] {
-    display: none;
-    text-align: center;
-  }
-
-  #author {
-    font-style: italic;
-    background: white;
-    text-align: center;
-    text-shadow: royalblue;
-  } */
-  /* .myTabs .tab {
-    width: 100%;
-    display: none;
-    order: 1;
-    background-image: linear-gradient(white, #323b8a);
-    font-size: 110%;
-  }
-  .myTabs input[type="radio"]:checked + label + .tab {
-    display: block;
-  }
-  .myTabs {
-    display: flex;
-  }
-  .myTabs input[type="radio"]:checked + label {
-    background-image: linear-gradient(white, #6f78ca);
-  }
-  .qualification {
-    display: grid;
-    grid-template-columns: 150px 100px;
-    grid-column-gap: 40px;
-    justify-self: center;
-    align-self: center;
-    width: fit-content;
-  }
-  #tag {
-    font-family: monospace;
-    background: white;
-    text-align: center;
-    font-size: 50px;
-  }
-  .myTabs label {
-    justify-content: center;
-    width: auto;
-    border-bottom: 1px solid linear-gradient(white, #323b8a);
-    padding: 25px;
-    background-image: linear-gradient(white, #323b8a);
-    font-weight: bold;
-    cursor: pointer;
-  }*/
-
-  #musicTab {
-    display: none;
-  }
-  .music {
+.music {
     background-image: linear-gradient(white, #6f78ca);
   }
 
