@@ -15,7 +15,7 @@ overflow: hidden;
 }
 .hero{
   position: relative;
- height: 100%;
+ height: 100vh;
   width: 100%;
   background-image: #eff4fd;
    scroll-snap-align: center;
@@ -231,17 +231,20 @@ footer {
 /*.socials {
   text-align: right;
   text-align: justify;
+}*/
+.skill{
+  font-size: 250px;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 .logoz {
-  border-radius: 50%;
-  width: 50px;
-  height: 55px;
-   text-align: left;
-  margin-left: auto;
-  margin-right:300px;
-    display: block;
+   border-radius: 50%;
+    display: inline-block; 
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-top: 200px;
 }
+/*
 .github{
   border-radius: 60%;
   width: 50px;
@@ -280,6 +283,7 @@ header{
 .SubTopics {
   background-color: burlywood;
   text-align: center;
+  overflow: hidden;
 }
 
 /*.myTabs {
@@ -303,9 +307,8 @@ header{
   text-shadow: royalblue;
 }*/
  .tab {
-   display: grid;
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100vh;
  background-image: url('../media/background.png');
@@ -406,6 +409,22 @@ button {
   }
   .hide {
     display: none;
+  }
+  @media screen and (max-width: 950px){
+    .images{
+  width: 15%;
+  height: 60%;
+  position: absolute;
+  bottom: 0%;
+  right: 100px;
+}
+.logoz {
+   border-radius: 50%;
+    display: inline-block; 
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 100px;
+}
   }
 
 
