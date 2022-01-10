@@ -7,15 +7,15 @@ function revealMusic() {
 
   page.style.display = "block";
 
-  button.onclick = function () {
-     if(counter){
-    page.style.display = "block";
-    counter= false
-   }else{
-    page.style.display = "none";
-    counter= true;
-   }
-  };
+  // button.onclick = function () {
+  //    if(counter){
+  //   page.style.display = "block";
+  //   counter= false
+  //  }else{
+  //   page.style.display = "none";
+  //   counter= true;
+  //  }
+  // };
 
   let mySong = document.getElementById("mySongs");
   let icon = document.getElementById("play");

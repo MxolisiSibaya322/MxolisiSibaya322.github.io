@@ -418,6 +418,7 @@ button {
   bottom: 0%;
   right: 100px;
 }
+
 .logoz {
    border-radius: 50%;
     display: inline-block; 
@@ -425,6 +426,26 @@ button {
     padding-left: 100px;
     padding-top: 100px;
 }
+.qualification{
+   grid-column-gap: 20px;
+   padding: 10px;
+    font-size: 15px;
+     grid-template-columns: 150px 150px;
+}
+
   }
+   @media screen and (max-width: 590px){
+     .logoz{
+         padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 50px;
+     }
+      .images{
+        display: none;
+      }
+      .details h1{
+  font-size: 20px;
+      }
+   }
 
 
