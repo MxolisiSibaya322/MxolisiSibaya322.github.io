@@ -129,183 +129,25 @@ animation-name: example;
 }
 
 
-
-
-
-
-
-
-/* header {
-  font-size: 30px;
-  font-family: 'Gruppo';font-size: 22px;
-  background-color: white;
-  background-image: linear-gradient(white, #323b8a);
-}
-p {
-  background-color: white;
-  font-size: 30px;
-}
-footer {
-  background-image: url('../media/background.png');
-  background-size: cover;
-  background-position :center;
-  position : relative;
-  overflow: hidden;
-}
-#CV{
- color: #fbfcfd;
- padding: 10px 25px;
- background: transparent;
- border: 1px solid #fff;
- border-radius: 20px;
- outline: none;
- cursor: pointer;
-}
-#name {
-  font-family: 'Merienda';
-  font: optional;
-  color: #fbfcfd;
-  text-align: center;
-}
-/* .content{
-  position  :absolute;
-  top: 50%;
-  left: 8%;
-  transform: translateY(-50%);
-  z-index: 2;
-} */
-.bubble img{
-  width: 5%;
-  filter: grayscale(10); 
-  animation: bubble 7s linear infinite;
-}
-.bubble{
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
-  bottom: -40px;
-}
-@keyframes bubble {
-  0%{
-    transform: translateY(0);
-    opacity: 0;
-  }
-  50%{
-    opacity: 1;
-  }
-  70%{
-    opacity: 1;
-  }
-  100%{
-    transform: translateY(-80vh);
-    opacity: 0;
-  }
-}
-.bubble img:nth-child(1){
-  width: 1%;
-  animation-delay: 2s;
-}
-.bubble img:nth-child(2){
-  width: 4%;
-  animation-delay: 3s;
-}
-.bubble img:nth-child(3){
-  width: 6%;
-  animation-delay: 4.5s;
-}
-.bubble img:nth-child(4){
-  width: 2%;
-  animation-delay: 5.5s;
-}
-.bubble img:nth-child(5){
-  animation-delay: 2.5s;
-}
-.bubble img:nth-child(6){
-  animation-delay: 3.5s;
-}
-.bubble img:nth-child(7){
-  animation-delay: 5.s;
-}
-/*.socials {
-  text-align: right;
-  text-align: justify;
-}*/
 .skill{
   font-size: 250px;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .logoz {
-   border-radius: 50%;
     display: inline-block; 
     padding-right: 200px;
     padding-left: 200px;
     padding-top: 200px;
 }
-/*
-.github{
-  border-radius: 60%;
-  width: 50px;
-  height: 55px;
-   text-align: center;
-  margin-left: 300px;
-  margin-right: auto;
-  display: block;
-}
-header{
-  width: 100%;
-  height: 100vh;
-  background-image: url('../media/background.png');
-  background-size: cover;
-  background-position :center;
-  position : relative;
-  overflow: hidden;
-}
-#centers {
 
-  cursor: pointer;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  border-radius: 50%;
-  
-}
-#subHeader {
-  text-align: center;
-  display: block;
-}
-#About {
-  text-align: center;
-}*/
 .SubTopics {
   background-color: burlywood;
   text-align: center;
   overflow: hidden;
 }
 
-/*.myTabs {
-  display: grid;
-  flex-wrap: wrap;
-  margin: 50px auto;
-  width: 100%;
-  justify-content: center;
-  grid-template-columns: 20% 20% 20% 20% 20%;
 
-}
-.myTabs input[type="radio"] {
-  display: none;
-  text-align: center;
-}
-
-#author {
-  font-style: italic;
-  background: white;
-  text-align: center;
-  text-shadow: royalblue;
-}*/
  .tab {
   display: flex;
   flex-direction: column;
@@ -320,19 +162,7 @@ header{
 .tab p{
   font-size: 20px;
 }
-/* .myTabs input[type="radio"]:checked + label + .tab {
-  display: block;
-}
-.myTabs {
-  display: flex;
-}
-.myTabs input[type="radio"]:checked + label {
-   background-image: url('../media/background.png');
-  background-size: cover;
-  background-position :center;
-  position : relative;
-  overflow: hidden;
-}*/
+
 .qualification {
   display: grid;
   grid-template-columns: 300px 300px;
@@ -344,21 +174,6 @@ header{
   margin-top: 5%;
   font-size: 25px;
 }
-/*#tag {
-  font-family: monospace;
-  background: white;
-  text-align: center;
-  font-size: 50px;
-}
-.myTabs label {
-  justify-content: center;
-  width: auto;
-  border-bottom: 1px solid linear-gradient(white, #323b8a);
-  padding: 25px;
-  background-image: linear-gradient(white, #323b8a);
-  font-weight: bold;
-  cursor: pointer;
-}*/
 
 #musicTab {
   display: block;
