@@ -6,16 +6,6 @@ function revealMusic() {
   window.open("./music.html", "_blank").focus();
 
   page.style.display = "block";
-
-  // button.onclick = function () {
-  //    if(counter){
-  //   page.style.display = "block";
-  //   counter= false
-  //  }else{
-  //   page.style.display = "none";
-  //   counter= true;
-  //  }
-  // };
 }
 
 function playMusic() {
@@ -54,9 +44,7 @@ function playMusic() {
     }
   };
 }
-function stop() {
-  playMusic();
-}
+
 function openInNewTab(){
   window.open("media/MxolisiCV.pdf", '_blank').focus();
 }
