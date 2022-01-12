@@ -362,8 +362,18 @@ header{
 
 #musicTab {
   display: block;
-      height: 100vh;
-    width: 100%;
+  height: 100vh;
+  width: 100%;
+  background-image: url('../media/background.png');
+  background-size: cover;
+  background-position :center;
+  position : relative;
+  overflow: hidden;
+}
+#titleSong{
+  font-weight: bolder;
+    font-size:  30px;
+     color: burlywood;
 }
 .music {
  background-image: url('../media/background.png');
@@ -371,6 +381,7 @@ header{
   background-position :center;
   position : relative;
   overflow: hidden;
+    font-size:  30px;
 }
 #play {
   cursor: pointer;
@@ -379,9 +390,6 @@ header{
 }
 #play2 {
   cursor: pointer;
-}
-.hide {
-  display: none;
 }
 button {
  background: black;
@@ -396,7 +404,11 @@ button {
 }
 
 .music {
-    background-image: linear-gradient(white, #6f78ca);
+ background-image: url('../media/background.png');
+  background-size: cover;
+  background-position :center;
+  position : relative;
+  overflow: hidden;
   }
 
   #play {
@@ -406,9 +418,6 @@ button {
   }
   #play2 {
     cursor: pointer;
-  }
-  .hide {
-    display: none;
   }
   @media screen and (max-width: 950px){
     .images{
