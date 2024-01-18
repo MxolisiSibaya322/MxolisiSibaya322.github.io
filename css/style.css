@@ -46,7 +46,7 @@ nav ul li a{
   font-weight: bold;
 }
 nav ul li a:hover{
-  color: burlywood;
+  color: #947633;
 }
 section{
   display: flex;
@@ -88,7 +88,7 @@ section{
 }
 .details a{
   background: black;
-  color: burlywood;
+  color: #947633;
   padding: 10px 10px;
   font-weight: bold;
   display: inline-block;
@@ -101,7 +101,7 @@ section{
   cursor: pointer;
 }           
 span{
-  color: burlywood;
+  color: #947633;
 }
 .images{
   width: 35%;
@@ -119,12 +119,12 @@ span{
   transition: bottom 2s left 1s;
 }
 .images .mxolisi{
-animation-name: example;
+animation-name: movement;
   animation-duration: 2s;  
   animation-delay: 0s;
   animation-fill-mode: backwards;
 }
-@keyframes example {
+@keyframes movement {
   from {bottom: -100%;}
   to {bottom: 0%;}
 }
@@ -150,24 +150,45 @@ animation-name: example;
 }
 
 .SubTopics {
-  background-color: burlywood;
+  background-color: #947633;
   text-align: center;
   overflow: hidden;
 }
 
+ video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-100;
+  width: 100%;
+  height: 70vh;
+}
+.bioText{
+  box-shadow: 0 4px 8px 0 #947633;
+  border-color: #947633;
+  
+  border-style: solid;
+  border-width: thick;
+  transition: 0.3s;
+  padding: 40px 80px;
+  
+}
 
  .tab {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100vh;
- background-image: url('../media/background.png');
-  background-size: cover;
-  background-position :center;
+ /* background-image: url('../media/background.png'); */
+  /* background-size: cover; */
+  /* background-position :center; */
  position :relative;
   overflow: hidden;
 } 
 .tab p{
+  background-color: white;
   font-size: 20px;
 }
 
@@ -184,27 +205,43 @@ animation-name: example;
 }
 
 #musicTab {
+  text-align: center;
   display: block;
   height: 100vh;
   width: 100%;
-  background-image: url('../media/background.png');
+  /* background-image: url('../media/background.png'); */
   background-size: cover;
   background-position :center;
   position : relative;
-  overflow: hidden;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  
 }
 #titleSong{
   font-weight: bolder;
     font-size:  30px;
-     color: burlywood;
+     color: #947633;
+}
+.musicText{
+  /* box-shadow: 0 4px 8px 0 #947633; */
+  border-color: #947633;
+  
+  border-style: solid;
+  border-width: thick;
+  transition: 0.3s;
+  font-size:  20px;
+  
 }
 .music {
- background-image: url('../media/background.png');
+ /* background-image: url('../media/background.png'); */
   background-size: cover;
   background-position :center;
   position : relative;
   overflow: hidden;
-    font-size:  30px;
+  padding-top: 40px;
+  /* padding-bottom: 40px; */
+
+
 }
 #play {
   cursor: pointer;
@@ -217,7 +254,7 @@ animation-name: example;
 button {
  background: black;
  background-color: black;
-  color: burlywood;
+  color: #947633;
   font-weight: bold;
  padding: 10px 25px;
  border-radius: 20px;
@@ -227,7 +264,7 @@ button {
 }
 
 .music {
- background-image: url('../media/background.png');
+ /* background-image: url('../media/background.png'); */
   background-size: cover;
   background-position :center;
   position : relative;
@@ -263,20 +300,50 @@ button {
    padding: 10px;
     font-size: 15px;
      grid-template-columns: 150px 150px;
+     background-color: white;
+     font-size: large;
+     font-weight: bold;
+     
 }
+header {
+  /* background-color: #333;
+  color: #fff; */
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
 
   }
    @media screen and (max-width: 590px){
+    .bioText{
+      box-shadow: 0 1px 2px 0 #947633;
+      border-color: #947633;
+      
+      border-style: solid;
+      border-width: thick;
+      transition: 0.3s;
+      padding: 2px 7px;
+      
+    }
      .logoz{
          padding-right: 50px;
     padding-left: 50px;
     padding-top: 50px;
      }
-      .images{
-        display: none;
-      }
+      
       .details h1{
   font-size: 20px;
+      }
+   }
+
+   @media screen and (max-width: 454px){
+
+    .images{
+        width: 12%;
+        height: 50%;
       }
    }
 
