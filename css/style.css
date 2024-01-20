@@ -21,12 +21,13 @@ body {
      margin: 0;
      padding: 0;
      overflow-x: hidden;
+     background: linear-gradient(to bottom right, #000000, #737373);
 }
 .form-group {
   margin-bottom: 15px;
 }
 .Biobackground{
-  background-image: url('/media/background.jpg');
+  background: linear-gradient(to bottom right, #000000, #737373);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,7 +36,7 @@ body {
   overflow: scroll;
   justify-self: center;
   align-self: center;
-  background-image: url('/media/background.jpg');
+  background: linear-gradient(to bottom right, #000000, #737373);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,7 +68,7 @@ input,
 textarea {
   width: 50%;
   padding: 10px;
-  border: 1px solid #947633;
+  border: 1px solid #00F6FF;
   border-radius: 4px;
   margin-top: 5px;
   font-size: 16px;
@@ -105,16 +106,16 @@ textarea {
   color: blue;
 }
 #musicPlay:hover{
-  color: #947633; 
+  color: #00F6FF; 
   cursor: pointer;;
 }
 
 button:hover {
-  color: #000;
-  background-color: #947633;
+  color: white;
+  background-color: #00F6FF;
 }
 .skills ul li:hover{
-  color: #947633;
+  color: #00F6FF;
   font-size: larger;
   
 }
@@ -133,12 +134,12 @@ button:hover {
 }
 .answers{
   border-style: solid;
-  border-color: #947633;
+  border-color: #00F6FF;
   border-width: medium;
 }
 .labeling{
   border-style: solid;
-  border-color: #947633;
+  border-color: #00F6FF;
   border-width: medium;
 }
 
@@ -174,11 +175,11 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
-  color: #000;
+  color: white;
   font-weight: bold;
 }
 nav ul li a:hover{
-  color: #947633;
+  color: #00F6FF;
 }
 section{
   display: flex;
@@ -196,6 +197,9 @@ section{
   margin-right: 22%;
   margin-top: 20%;
 }
+.details p{
+  color: white;
+}
 .details span {
   font-family: "Source_Code_Pro";
 }
@@ -203,7 +207,7 @@ section{
 .details h1{
   font-family: "Source_Code_Pro";
   font-size: 40px;
-  color: #000;
+  color: white;
   margin-bottom: 20px;
    overflow: hidden; 
   border-right: .15em solid black;
@@ -226,7 +230,7 @@ section{
 }
 .details a{
   background: black;
-  color: #947633;
+  color: #00F6FF;
   padding: 10px 10px;
   font-weight: bold;
   display: inline-block;
@@ -237,7 +241,7 @@ section{
 } 
 .details a:hover{
   cursor: pointer;
-  background:  #947633;
+  background:  #00F6FF;
   color:black;
 }   
 .iconDetails{
@@ -261,7 +265,7 @@ section{
   text-decoration: none; */
 }         
 span{
-  color: #947633;
+  color: #00F6FF;
 }
 .images{
   width: 35%;
@@ -307,12 +311,28 @@ animation-name: movement;
     padding-left: 5%;
 
 }
+.logoz a {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.logoz a img {
+  transition: transform 0.3s ease-in-out;
+}
+.logoz a:hover img{
+  transform: scale(1.9);
+}
 .logoz {
     display: inline-block; 
+    
+}
+.logoz:hover{
+  background-color: #00F6FF;
 }
 
 .SubTopics {
-  background-color: #947633;
+  background-color: #00F6FF;
   text-align: center;
   overflow: hidden;
 }
@@ -327,8 +347,8 @@ animation-name: movement;
 
   font-weight: bold;
   font-family: "Source_Code_Pro";
-  box-shadow: 0 4px 8px 0 #947633;
-  border-color: #947633;
+  box-shadow: 0 4px 8px 0 #00F6FF;
+  border-color: #00F6FF;
   
   border-style: solid;
   border-width: thick;
@@ -338,8 +358,8 @@ animation-name: movement;
 .bioText{
   font-weight: bold;
   font-family: "Source_Code_Pro";
-  box-shadow: 0 4px 8px 0 #947633;
-  border-color: #947633;
+  box-shadow: 0 4px 8px 0 #00F6FF;
+  border-color: #00F6FF;
   
   border-style: solid;
   border-width: thick;
@@ -397,11 +417,11 @@ animation-name: movement;
 #titleSong{
   font-weight: bolder;
     font-size:  30px;
-     color: #947633;
+     color: #00F6FF;
 }
 .musicText{
   /* box-shadow: 0 4px 8px 0 #947633; */
-  border-color: #947633;
+  border-color: #00F6FF;
   
   border-style: solid;
   border-width: thick;
@@ -432,7 +452,7 @@ button {
   
  background: black;
  background-color: black;
-  color: #947633;
+  color: #00F6FF;
   font-weight: bold;
  padding: auto;
  border-radius: 20px;
@@ -493,8 +513,8 @@ header {
   }
    @media screen and (max-width: 877px){
     .bioText{
-      box-shadow: 0 1px 2px 0 #947633;
-      border-color: #947633;
+      box-shadow: 0 1px 2px 0 #00F6FF;
+      border-color: #00F6FF;
       
       border-style: solid;
       border-width: thick;
