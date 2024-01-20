@@ -45,6 +45,6 @@ function playMusic() {
   };
 }
 
-function openInNewTab(){
-  window.open("media/MxolisiCV.pdf", '_blank').focus();
+function openInNewTab(route){
+  window.open(route, '_blank').focus();
 }

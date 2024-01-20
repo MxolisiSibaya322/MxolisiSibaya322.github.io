@@ -4,7 +4,7 @@
     <title>Mxolisi Sibaya : A student of code</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="script.js"></script>
-    <link rel="icon" href="media/MUGSHOT.jpg" />
+    <link rel="icon" href="media/logo2.png" />
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
     <meta name="viewport" content="width=device-width" />
     <meta charset="UTF-8" />
@@ -31,7 +31,7 @@
         <div class="details">
           <h1>Hi, I'm Mxolisi <span>Sibaya</span></h1>
           <p>This is my official online portfolio</p>
-          <a onclick="openInNewTab()" >View My CV</a>
+          <a onclick="openInNewTab('media/MxolisiCV.pdf')" >View My CV</a>
         </div>
         <div class="images">
          <img src="media/shape.png" class="shape">
@@ -73,14 +73,14 @@
           
         </div>
         <div class="qualification">
-          <div class="labeling">Full Name :</div>
-          <div class="answers">Mxolisi Sibaya</div>
-          <div class="labeling">Place Of Birth :</div>
-          <div class="answers">Orlando West,Soweto.</div>
-          <div class="labeling">Country Of Birth :</div>
-          <div class="answers">South Africa</div>
-          <div class="labeling">Hobbies :</div>
-          <div class="answers">
+          <div class="labeling1">Full Name :</div>
+          <div class="answers1">Mxolisi Sibaya</div>
+          <div class="labeling1">Place Of Birth :</div>
+          <div class="answers1">Orlando West,Soweto.</div>
+          <div class="labeling1">Country Of Birth :</div>
+          <div class="answers1">South Africa</div>
+          <div class="labeling1">Hobbies :</div>
+          <div class="answers1">
             Soccer, Reading Novels & <br />
             <button id="musicPlay" onclick="revealMusic()">
               Music production <br />(CLICK HERE)
@@ -108,15 +108,19 @@
       <!-- <video autoplay muted loop>
         <source src="media/video-logo.mp4" type="video/mp4"> -->
       <!-- </video> -->
-      <p class="skill">
-        Java Programming<br />
-        SQL<br />
-        JavaScript Programming<br />
-        HTML & HTML5<br />
-        CSS<br />
-        C++<br />
-        Visual Basic<br /><br /><br /><br /><br />
-      </p>
+      <div class="skills">
+        <Ul>
+          <li><img src="media/java.png" style="display: inline-block;" alt="" height="30" width="30"> Java Programming</li>
+          <li><img src="media/sql.png" style="display: inline-block;" alt="" height="30" width="30">SQL</li>
+          <li><img src="media/js.jpg" style="display: inline-block;" alt="" height="30" width="30"> JavaScript Programming</li>
+          <li><img src="media/html.png" style="display: inline-block;" alt="" height="30" width="30"> HTML & HTML5</li>
+          <li><img src="media/css.png" style="display: inline-block;" alt="" height="30" width="30"> CSS</li>
+          <li><img src="media/html.png" style="display: inline-block;" alt="" height="30" width="30"> C++</li>
+          <li><img src="media/flutter.png" style="display: inline-block;" alt="" height="30" width="30"> flutter</li>
+         <li><img src="media/VB.png" style="display: inline-block;" alt="" height="30" width="30"> Visual Basic</li>
+        </Ul>
+      
+      </div>
         </div>
      </section>
      <section id="Qualifications" >
@@ -172,38 +176,66 @@
       <!-- <video autoplay muted loop> -->
         <!-- <source src="media/video-logo.mp4" type="video/mp4"> -->
       <!-- </video> -->
-        <h1 class="SubTopics">CONTACT ME</h1>
-     <h3 class="socials">
-        <a href="https://mxolisi.sibaya@umuzi.org/">
+        <!-- <h1 class="SubTopics">CONTACT ME</h1>   -->
+        <div class="container">
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="full-name" >Full Name</label>
+              <input type="text" id="full-name" name="full-name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <p>
+          <video muted autoplay loop>
+            <source src="media/video-logo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <a href="https://mxolisi.sibaya@umuzi.org/">
+            <img
+            class="logoz"
+            src="media/download.png"
+            width="30"
+            height="30"
+            alt="logos"
+          />
+          </a>
+            <a href="https://github.com/MxolisiSibaya322">
           <img
-          class="logoz"
-          src="media/download.png"
-          width="50"
-          height="50"
-          alt="logos"
-        />
-        </a>
-          <a href="https://github.com/MxolisiSibaya322">
-        <img
-          class="github"
-          id="mid"
-          src="media/GitHub-logo.png"
-          width="79"
-          height="79"
-          alt="logos 2"
-        /></a>    
-        <a href="https://www.linkedin.com/in/mxolisi-sibaya-63283b15b/"
-          ><img
-          class="logoz"
-          id="right"
-          src="media/174857.png"
-          width="80"
-          height="80"
-          alt="logos 2"
-        /></a> 
-       </h3>
+            class="logoz"
+            id="mid"
+            src="media/GitHub-logo.png"
+            width="59"
+            height="49"
+            alt="logos 2"
+          /></a>    
+          <a href="https://www.linkedin.com/in/mxolisi-sibaya-63283b15b/"
+            ><img
+            class="logoz"
+            id="right"
+            src="media/174857.png"
+            width="40"
+            height="40"
+            alt="logos 2"
+          /></a> 
+            </p>
+          
+      
       </div>
+      <footer>
+        <small>Khanya-Nathi inc &copy; 2024 all rights reserved.</small>
+        
+    </footer>
      </section>
-     </div>
+     
+     
     
 </html>
