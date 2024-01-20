@@ -353,13 +353,7 @@ button {
   right: 100px;
 }
 
-.logoz {
-   border-radius: 50%;
-    display: inline-block; 
-    padding-right: 25px;
-    padding-left: 25px;
-    
-}
+
 .qualification{
    grid-column-gap: 20px;
    padding: 10px;
@@ -395,11 +389,7 @@ header {
       padding: 2px 7px;
       
     }
-     .logoz{
-         padding-right: 13px;
-    padding-left:13px;
-    
-     }
+
       
       .details h1{
   font-size: 20px;
