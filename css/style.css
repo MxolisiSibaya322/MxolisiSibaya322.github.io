@@ -209,9 +209,9 @@ animation-name: movement;
 
 .logoz {
     display: inline-block; 
-    padding-right: 50px;
-    padding-left: 50px;
-    padding-bottom: 40px;
+    padding-right:auto;
+    padding-left: auto;
+    padding-bottom: auto;
 }
 
 .SubTopics {
