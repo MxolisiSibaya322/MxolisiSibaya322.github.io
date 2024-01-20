@@ -164,6 +164,8 @@ section{
 } 
 .details a:hover{
   cursor: pointer;
+  background:  #947633;
+  color:black;
 }           
 span{
   color: #947633;
