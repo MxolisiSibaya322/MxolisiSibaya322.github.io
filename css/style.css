@@ -8,8 +8,7 @@
 
 
 
-
-
+/* document settings */
 *{
   margin: 0;
   padding: 0;
@@ -26,6 +25,11 @@ body {
      overflow-x: hidden;
      background: linear-gradient(to bottom right, #000000, #737373);
 }
+/* document settings */
+
+
+
+
 .form-group {
   margin-bottom: 15px;
 }
@@ -52,16 +56,6 @@ body {
   overflow: hidden;
 }
 
-/* .background-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url('/media/background.jpg') center/cover no-repeat; 
-  opacity: 0.8; 
-} */
 label {
   font-size: 16px;
   color: black;
@@ -303,6 +297,9 @@ span{
   transform: translateX(-50%);
   transition: bottom 2s left 1s;
 }
+.images .shape{
+
+}
 .images .mxolisi{
 animation-name: movement;
   animation-duration: 2s;  
@@ -514,7 +511,7 @@ button {
    padding: 10px;
     font-size: 15px;
      grid-template-columns: 150px 150px;
-     background-color: white;
+     
      font-size: large;
      font-weight: bold;
   
@@ -568,6 +565,10 @@ header {
         width: 12%;
         height: 50%;
       }
+    video{
+      height: auto;
+      width: 40%;
+    }
    }
    @media screen and (max-width: 360px){
 
