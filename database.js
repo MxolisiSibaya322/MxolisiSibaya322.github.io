@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    hideLoadingOverlay()
     const firebaseConfig = {
         apiKey: "AIzaSyArLH_GYyAQTwsEA3vJwldOUvTUbUUZ3UY",
         authDomain: "personal-website-8a5e8.firebaseapp.com",
@@ -44,3 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
   });
+
+  function hideLoadingOverlay() {
+    // Hide the loading overlay
+    document.getElementById('loading-overlay').style.display = 'none';
+  }
