@@ -23,164 +23,50 @@ body {
      margin: 0;
      padding: 0;
      overflow-x: hidden;
-     background: linear-gradient(to bottom right, #000000, #737373);
+     background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  height: 100vh;
+  overflow: hidden;
+  }
+  .container{
+    height: 100%;
+    width: 100%;
+  }
+
+  button {
+
+    align-self: center;
+    width: 50%;
+    background-color: black;
+    color: #fff;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
 /* document settings */
 
 
+/* Tab settings */
 
-
-.form-group {
-  margin-bottom: 15px;
-}
-.Biobackground{
-  background: linear-gradient(to bottom right, #000000, #737373);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.qualities{
-  overflow: scroll;
-  justify-self: center;
-  align-self: center;
-  background: linear-gradient(to bottom right, #000000, #737373);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.background-image {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-
-label {
-  font-size: 16px;
-  color: black;
-}
-
-input,
-textarea {
-  width: 50%;
-  padding: 10px;
-  border: 1px solid #00F6FF;
-  border-radius: 4px;
-  margin-top: 5px;
-  font-size: 16px;
-  resize: none;
-  /* overflow: scroll; */
-}
-#loading-overlay {
-  position:relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  overflow: hidden;
-}
-
-#loading-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.musicButtons button{
-  display: inline;
-  align-self: center;
-  width: 20%;
-  background-color: black;
-  color: #fff;
-  padding: 2px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
- button {
-
-  align-self: center;
-  width: 50%;
-  background-color: black;
-  color: #fff;
-  padding: 2px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-#musicPlay{
-  font-size: x-large;
-  color: #00F6FF; 
-}
-#musicPlay:hover{
-  color: red; 
-  cursor: pointer;;
-}
-
-button:hover {
-  color: white;
-  background-color: #00F6FF;
-}
-.skills ul li{
-  color: white;
-}
-.skills ul li:hover{
-  color: #00F6FF;
-  font-size: larger;
-  
-}
-/* .container {
-
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 400px;
-} */
-
-.contact-form {
-  padding-top: 20px;
+.tab {
   display: flex;
   flex-direction: column;
-}
-.contact-form label{
-  color: white;
-
-}
-.contact-form input  {
-  color: white;
-  background-color:transparent;
-
-}
-.contact-form textarea{
-  color: white;
-  background-color:transparent;
-}
-.answers{
-  border-style: solid;
-  border-color: #00F6FF;
-  border-width: medium;
-  color: white;
-}
-.labeling{
-  border-style: solid;
-  border-color: #00F6FF;
-  border-width: medium;
-  color: white;
-}
-
-body {
-font-family: Arial, Helvetica, sans-serif;
-line-height: 1.6;
-height: 100vh;
-overflow: hidden;
-}
-.container{
-  height: 100%;
   width: 100%;
+  height: 100vh;
+ /* background-image: url('../media/background.png'); */
+  /* background-size: cover; */
+  /* background-position :center; */
+ position :relative;
+  overflow: hidden;
+} 
+.tab p{
+  color: white;
+  font-size: 20px;
 }
 .hero{
   position: relative;
@@ -220,6 +106,132 @@ section{
   height: 100vh;
   scroll-snap-align: center;
 }
+/* Tab settings */
+
+
+
+
+
+/* contact me */
+
+label {
+  font-size: 16px;
+  color: black;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+input,
+textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #00F6FF;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 16px;
+  resize: none;
+  /* overflow: scroll; */
+}
+.contact-form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label{
+  color: white;
+
+}
+.contact-form input  {
+  color: white;
+  background-color:transparent;
+
+}
+.contact-form textarea{
+  color: white;
+  background-color:transparent;
+}
+/* contact me */
+
+
+/* loading screen */
+#loading-overlay {
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+#loading-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* loading screen */
+
+.musicButtons button{
+  display: inline;
+  align-self: center;
+  width: 20%;
+  background-color: black;
+  color: #fff;
+  padding: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+ 
+#musicPlay{
+  font-size: x-large;
+  color: #00F6FF; 
+}
+#musicPlay:hover{
+  color: red; 
+  cursor: pointer;;
+}
+
+button:hover {
+  color: white;
+  background-color: #00F6FF;
+}
+.skills ul li{
+  color: white;
+}
+.skills ul li:hover{
+  color: #00F6FF;
+  font-size: larger;
+  
+}
+/* .container {
+
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+} */
+
+
+.answers{
+  border-style: solid;
+  border-color: #00F6FF;
+  border-width: medium;
+  color: white;
+}
+.labeling{
+  border-style: solid;
+  border-color: #00F6FF;
+  border-width: medium;
+  color: white;
+}
+
+
+
 .details{
   font-family: "Source_Code_Pro";
   margin-left: 6%;
@@ -312,7 +324,8 @@ span{
   transition: bottom 2s left 1s;
 }
 .images .shape{
-
+    
+  
 }
 .images .mxolisi{
 animation-name: movement;
@@ -376,8 +389,26 @@ animation-name: movement;
   padding-bottom: auto;
   background-color: black;
 }
-.textBG{
+/* Bio Tab */
+.bioPic image{
+  width: 10%;
+  /* height: auto; */
+  justify-items: center;
+  
+}
 
+.qualities{
+  overflow: hidden;
+  justify-self: center;
+  align-self: center;
+  background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.textBG{
+  width: 40%;
+  float: right;
   font-weight: bold;
   font-family: "Source_Code_Pro";
   box-shadow: 0 4px 8px 0 #00F6FF;
@@ -388,7 +419,10 @@ animation-name: movement;
   transition: 0.3s;
 
  }
+
 .bioText{
+  width: 40%;
+  float: left;
   font-weight: bold;
   font-family: "Source_Code_Pro";
   box-shadow: 0 4px 8px 0 #00F6FF;
@@ -397,25 +431,24 @@ animation-name: movement;
   border-style: solid;
   border-width: thick;
   transition: 0.3s;
-  padding: 40px 80px;
+  /* padding: 40px 80px; */
   
 }
+.hobbies{
+  width: 100%; /* Full width for centering */
+ text-align: center;
+ padding: 20px; /* Adjust the padding as needed for spacing */
 
- .tab {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100vh;
- /* background-image: url('../media/background.png'); */
-  /* background-size: cover; */
-  /* background-position :center; */
- position :relative;
-  overflow: hidden;
-} 
-.tab p{
-  background-color: white;
-  font-size: 20px;
+
 }
+.Biobackground{
+  background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+ /* Bio Tab */
 
  
 
@@ -510,6 +543,15 @@ button {
   #play2 {
     cursor: pointer;
   }
+
+  @media screen and (max-width: 1400px){
+    .qualitiesLink{
+      overflow: scroll;
+      scroll-behavior: smooth;
+
+      
+    }
+  }
   @media screen and (max-width: 1169px){
     .images{
   width: 15%;
@@ -545,27 +587,6 @@ header {
 
   }
    @media screen and (max-width: 877px){
-    .bioText{
-      box-shadow: 0 1px 2px 0 #00F6FF;
-      border-color: #00F6FF;
-      
-      border-style: solid;
-      border-width: thick;
-      transition: 0.3s;
-      padding: 2px 7px;
-      
-    }
-    /* .textBG{
-      box-shadow: 0 1px 2px 0 #947633;
-      border-color: #947633;
-      
-      border-style: solid;
-      border-width: thick;
-      transition: 0.3s;
-      padding: 2px 7px;
-      
-    } */
-
       
       .details h1{
   font-size: 18px;
@@ -583,12 +604,29 @@ header {
       height: auto;
       width: 40%;
     }
+    .qualitiesLink{
+      overflow: scroll;
+      scroll-behavior: smooth;
+
+      
+    }
+    
+    .textBG{
+      width: 100%;
+      float: none;
+    
+     }
+    
+    .bioText{
+      width: 100%;
+      float: none;
+    }
    }
-   @media screen and (max-width: 360px){
+   @media screen and (max-width: 390px){
 
     .images{
-        width: 10%;
-        height: 25%;
+        width: 18%;
+        height: 35%;
       }
       .details h1{
         font-size: 9px;
