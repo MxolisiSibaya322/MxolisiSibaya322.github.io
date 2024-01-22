@@ -589,7 +589,7 @@ header {
    @media screen and (max-width: 877px){
       
       .details h1{
-  font-size: 18px;
+  font-size: 28px;
       }
    }
 
@@ -629,11 +629,11 @@ header {
         height: 35%;
       }
       .details h1{
-        font-size: 9px;
+        font-size: 18px;
             }
 
       .details p{
-        font-size: 9px;
+        font-size: 15px;
       }
    }
 
