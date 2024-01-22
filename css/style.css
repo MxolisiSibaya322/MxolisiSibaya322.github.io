@@ -200,8 +200,24 @@ button:hover {
   color: white;
   background-color: #00F6FF;
 }
+
+#picProjects img{
+  padding-right: 40px;
+
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 .skills ul li{
   color: white;
+  width: 33.3%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #00F6FF;
+  border-width: medium;
 }
 .skills ul li:hover{
   color: #00F6FF;
@@ -468,6 +484,8 @@ animation-name: movement;
 }
 
 #musicTab {
+  font-family: "Source_Code_Pro";
+  color: white;
   text-align: center;
   display: block;
   height: 100vh;
@@ -599,6 +617,15 @@ header {
       .details h1{
   font-size: 28px;
       }
+      .skills ul li{
+        color: white;
+        width: 100%;
+        /* box-sizing: border-box; */
+      }
+      .projects{
+        overflow: scroll;
+      }
+
    }
 
 
@@ -614,9 +641,7 @@ header {
     }
     .qualitiesLink{
       overflow: scroll;
-      scroll-behavior: smooth;
-
-      
+      scroll-behavior: smooth; 
     }
     
     .textBG{
