@@ -50,3 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
    
     document.getElementById('loading-overlay').style.display = 'none';
   }
+
+  window.addEventListener("load", function () {
+    hideLoadingOverlay();
+  });
+
