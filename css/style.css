@@ -639,6 +639,9 @@ header {
       height: auto;
       width: 25%;
     }
+    .emails p{
+      font-size: smaller;
+    }
     
     
     .textBG{
