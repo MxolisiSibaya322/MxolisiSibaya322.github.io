@@ -343,6 +343,7 @@ span{
     
   
 }
+
 .images .mxolisi{
 animation-name: movement;
   animation-duration: 2s;  
@@ -376,6 +377,10 @@ animation-name: movement;
   display: inline-block;
   overflow: hidden;
   position: relative;
+}
+.qualitiesLink{
+  overflow: scroll;
+  scroll-behavior: smooth; 
 }
 
 .iconDetails a img {
@@ -414,7 +419,6 @@ animation-name: movement;
 }
 
 .qualities{
-  overflow: hidden;
   justify-self: center;
   align-self: center;
   background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
@@ -482,6 +486,9 @@ animation-name: movement;
   font-size: 25px;
   
 }
+#musicTab h1{
+  color: black;
+}
 
 #musicTab {
   font-family: "Source_Code_Pro";
@@ -494,8 +501,7 @@ animation-name: movement;
   background-size: cover;
   background-position :center;
   position : relative;
-  overflow: scroll;
-  scroll-behavior: smooth;
+
   
 }
 #titleSong{
@@ -570,14 +576,7 @@ button {
     height: auto;
   }
 
-  @media screen and (max-width: 1400px){
-    .qualitiesLink{
-      overflow: scroll;
-      scroll-behavior: smooth;
 
-      
-    }
-  }
   @media screen and (max-width: 1169px){
     .images{
   width: 15%;
@@ -639,10 +638,7 @@ header {
       height: auto;
       width: 25%;
     }
-    .qualitiesLink{
-      overflow: scroll;
-      scroll-behavior: smooth; 
-    }
+    
     
     .textBG{
       width: 100%;

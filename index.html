@@ -43,7 +43,7 @@
         <div class="details">
           <h1>Hi, I'm Mxolisi <span>Sibaya</span></h1>
           <p>This is my official online portfolio</p>
-          <a onclick="openInNewTab('media/MxolisiCV.pdf')" >View My CV </a> 
+          <a id="detailsButton" onclick="openInNewTab('media/MxolisiCV.pdf')" >View My CV </a> 
            
          
         </div>
@@ -122,24 +122,102 @@
               <p>Raised in Orlando West, Soweto, I hail from a culturally diverse community, 
               fostering an early appreciation for various traditions. This upbringing instilled in me 
               a natural inclination towards accommodation and understanding. Engaging in a range of 
-              extracurricular activities enriched my experiences. Explore my top three hobbies by 
-              clicking on each link below for more information:</p> <br> <br>
+              extracurricular activities enriched my experiences. Explore my top three hobbies below :</p> <br> <br>
             </div>
             <div class="bioPic">
               <img src="media/MUGSHOT.png" height="290" width="290">
              </div>
               </div>
               <div class="hobbies">
-              <a id="musicPlay" onclick="revealMusic()">
+              <a id="musicPlay" >
                 Hackathons <br />
               </a>
-              <a id="musicPlay" onclick="revealMusic()">
-                Time With Family <br />
+              <a id="musicPlay" >
+                Soccer <br />
               </a>
-              <a id="musicPlay" onclick="revealMusic()">
+              <a id="musicPlay">
                 Music production <br />
               </a>
             </div>
+
+     <div id="hacka">
+      <h2 class="SubTopics">HACKATHONS</h2>
+      <br>
+      <p>In my spare time, I stay in the know about the tech environment by attending tech events as well as 
+        participating in hackathons to test my ability in teamwork and using my abilities to solve real life problems using 
+        collaboration and critical thinking.
+
+
+        <br><br>
+
+        <img src="media/hack1.JPG" alt="hackathon-pic" width="450"> 
+        <img src="media/hack2.JPG" alt="hackathon-pic" width="450"> 
+        <img src="media/hack3.jpg" alt="hackathon-pic" width="450"> 
+        <img src="media/hack4.jpg" alt="hackathon-pic" width="450"> 
+        <img src="media/hack5.jpg" alt="hackathon-pic" width="450"> 
+        <img src="media/hack6.jpg" alt="hackathon-pic" width="450"> 
+      </p>
+
+     </div>
+     <div id="soccer">
+      <h2 class="SubTopics">SOCCER</h2>
+      <br>
+
+     </div>       
+            
+     <div id="musicTab">
+      <h1 class="SubTopics">Music</h1>
+          <div class="musicText">
+            <p >
+              In my spare time,I make music. My stage name is Flowie and I will
+              share two of my songs with you.<br />
+              <br />
+              The first song is titled "Fede Macala" and it features my music mate
+              since High school: Nathi L. On this track, we view life from the
+              eyes of drug addicts who live in the township.Click play to hear the
+              track,enjoy! &#128522;
+            </p>
+          </div>
+          <p class="music">
+              <p id="titleSong">Flowie ft Nathi L- Fede Macala</p>
+            <div class="musicButtons">
+              <button id="audio1" onclick=playMusic() play &#9658
+              >play &#9658</button>
+              <button id="stop1" onclick=playMusic()  Stop &#9611
+              >Stop &#9611</button></p>
+              <br><br><br>
+            
+           
+          
+
+          <audio id="mySongs">
+            <source src="media/fedeMacala.wav" type="audio/wav" />
+          </audio>
+          
+
+          <p class="musicText">
+            The next song I'm going to share with you is titled IKISR(short for
+            I Keep It So Real).Click play to hear the track,enjoy! &#128522;
+          </p>
+          <div class="musicButtons">
+            <p class="music">
+              <p id="titleSong"> Flowie - IKISR</p>
+             <button id="audio2" onclick=playMusic() play &#9658
+              >play &#9658</button>
+              <button id="stop2" onclick=playMusic()  Stop &#9611
+              >Stop &#9611</button></p>
+          </div>
+          <img src="media/studio.png" height="290" 
+          ><br><br>
+             
+            </div>
+            
+          
+          <audio id="mySong">
+            <source src="media/Flowie-IKISO.wav" type="audio/wav" />
+          </audio>
+          
+        </div>
              
             </div>
          </section>
@@ -166,12 +244,13 @@
         </ul>
         </nav>
        <div class="tab">
-      <h1 class="SubTopics">PROJECTS</h1>
+      
       <!-- <video autoplay muted loop>
         <source src="media/video-logo.mp4" type="video/mp4"> -->
       <!-- </video> -->
       <br><br>
       <div class="projects">
+      <h1 class="SubTopics">PROJECTS</h1>
       <p>I have worked on numerous projects over the years and 
         below are some of them that I will share with you</p>
 
