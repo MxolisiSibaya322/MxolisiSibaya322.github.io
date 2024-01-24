@@ -8,7 +8,8 @@
 
 
 
-/* document settings */
+/*************************************** Docment Settings ******************************************/
+
 *{
   margin: 0;
   padding: 0;
@@ -48,10 +49,24 @@ body {
     cursor: pointer;
     font-size: 16px;
   }
-/* document settings */
+  .SubTopics {
+    background-color: #00F6FF;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+   video {
+  
+    width: 15%;
+    height: auto;
+    padding-bottom: auto;
+    background-color: black;
+  }
+/*************************************** Docment Settings ******************************************/
 
 
-/* Tab settings */
+
+/*************************************** Tab Settings ******************************************/
 
 .tab {
   display: flex;
@@ -106,148 +121,10 @@ section{
   height: 100vh;
   scroll-snap-align: center;
 }
-/* Tab settings */
+/*************************************** Tab Settings ******************************************/
 
 
-
-
-
-/* contact me */
-
-label {
-  font-size: 16px;
-  color: black;
-}
-.form-group {
-  margin-bottom: 15px;
-}
-
-
-input,
-textarea {
-  width: 50%;
-  padding: 10px;
-  border: 1px solid #00F6FF;
-  border-radius: 4px;
-  margin-top: 5px;
-  font-size: 16px;
-  resize: none;
-  /* overflow: scroll; */
-}
-.contact-form {
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.contact-form label{
-  color: white;
-
-}
-.contact-form input  {
-  color: white;
-  background-color:transparent;
-
-}
-.contact-form textarea{
-  color: white;
-  background-color:transparent;
-}
-/* contact me */
-
-
-/* loading screen */
-#loading-overlay {
-  position:relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  overflow: hidden;
-}
-
-#loading-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-/* loading screen */
-
-.musicButtons button{
-  display: inline;
-  align-self: center;
-  width: 20%;
-  background-color: black;
-  color: #fff;
-  padding: 2px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
- 
-#musicPlay{
-  font-size: x-large;
-  color: #00F6FF; 
-}
-#musicPlay:hover{
-  color: red; 
-  cursor: pointer;;
-}
-
-button:hover {
-  color: white;
-  background-color: #00F6FF;
-}
-
-#picProjects img{
-  padding-right: 40px;
-
-}
-.skills ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.skills ul li{
-  color: white;
-  width: 33.3%;
-  box-sizing: border-box;
-  border-style: solid;
-  border-color: #00F6FF;
-  border-width: medium;
-}
-.skills ul li:hover{
-  color: #00F6FF;
-  font-size: larger;
-  
-}
-/* .container {
-
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 400px;
-} */
-
-
-.answers{
-  border-style: solid;
-  border-color: #00F6FF;
-  border-width: medium;
-  color: white;
-}
-.labeling{
-  border-style: solid;
-  border-color: #00F6FF;
-  border-width: medium;
-  color: white;
-}
-
-
-
+/*************************************** Home Section ******************************************/
 .details{
   font-family: "Source_Code_Pro";
   margin-left: 6%;
@@ -280,7 +157,6 @@ button:hover {
   to { width: 100% }
 }
 
-
 @keyframes blink-caret {
   from, to { border-color: transparent }
   50% { border-color: black }
@@ -309,17 +185,6 @@ button:hover {
   margin-top: 20%;*/
   margin-left: 6%;
   
-} 
- .iconDetails a{
-  /* background: black;
-  color: #947633;
-  padding: 10px 10px;
-  font-weight: bold;
-  display: inline-block;
-  text-align: center;
-  margin: 20px 0;
-  border-radius: 5px;
-  text-decoration: none; */
 }         
 span{
   color: #00F6FF;
@@ -360,28 +225,12 @@ animation-name: movement;
 .images:hover .mxolisi{
   left: 45%;
 }
-
-
-/* .skill{ */
-  /* font-size: 250px;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-} */
-#musicPlay{
-  display: inline-block; 
-    padding-right:5%;
-    padding-left: 5%;
-
-}
 .logoz a {
   display: inline-block;
   overflow: hidden;
   position: relative;
 }
-.qualitiesLink{
-  overflow: scroll;
-  scroll-behavior: smooth; 
-}
+
 
 .iconDetails a img {
   transition: transform 0.3s ease-in-out;
@@ -397,23 +246,81 @@ animation-name: movement;
   background-color: #00F6FF;
 }
 
-.SubTopics {
-  background-color: #00F6FF;
-  text-align: center;
+/*************************************** Home Section ******************************************/
+
+
+
+/*************************************** Contact Me Section ******************************************/
+
+label {
+  font-size: 16px;
+  color: black;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+input,
+textarea {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #00F6FF;
+  border-radius: 4px;
+  margin-top: 5px;
+  font-size: 16px;
+  resize: none;
+  /* overflow: scroll; */
+}
+.contact-form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-form label{
+  color: white;
+
+}
+.contact-form input  {
+  color: white;
+  background-color:transparent;
+
+}
+.contact-form textarea{
+  color: white;
+  background-color:transparent;
+}
+/*************************************** Contact Me Section ******************************************/
+
+
+/* loading screen */
+#loading-overlay {
+  position:relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
   overflow: hidden;
 }
 
- video {
-
-  width: 15%;
-  height: auto;
-  padding-bottom: auto;
-  background-color: black;
+#loading-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-/* Bio Tab */
+/* loading screen */
+
+
+
+
+/*************************************** BIO Section ******************************************/
+.qualitiesLink{
+  overflow: scroll;
+  scroll-behavior: smooth; 
+}
 .bioPic image{
   width: 10%;
-  /* height: auto; */
   justify-items: center;
   
 }
@@ -451,13 +358,13 @@ animation-name: movement;
   border-style: solid;
   border-width: thick;
   transition: 0.3s;
-  /* padding: 40px 80px; */
+
   
 }
 .hobbies{
-  width: 100%; /* Full width for centering */
+  width: 100%; 
  text-align: center;
- padding: 20px; /* Adjust the padding as needed for spacing */
+ padding: 20px; 
 
 
 }
@@ -468,24 +375,7 @@ animation-name: movement;
   background-repeat: no-repeat;
 }
 
- /* Bio Tab */
-
- 
-
-
-.qualification {
-  
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-column-gap: 40px;
-  justify-self: center;
-  align-self: center;
-  width: fit-content;
-  padding: 20px;
-  margin-top: 5%;
-  font-size: 25px;
-  
-}
+/*************************************** MUSIC Section ******************************************/
 #musicTab h1{
   color: black;
 }
@@ -497,7 +387,6 @@ animation-name: movement;
   display: block;
   height: 100vh;
   width: 100%;
-  /* background-image: url('../media/background.png'); */
   background-size: cover;
   background-position :center;
   position : relative;
@@ -567,14 +456,121 @@ button {
   #play2 {
     cursor: pointer;
   }
-  .education{
-    overflow: scroll;
-    display: grid;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    height: auto;
+  .musicButtons button{
+    display: inline;
+    align-self: center;
+    width: 20%;
+    background-color: black;
+    color: #fff;
+    padding: 2px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
   }
+
+  #musicPlay{
+    font-size: x-large;
+    color: #00F6FF; 
+  }
+  #musicPlay:hover{
+    color: red; 
+    cursor: pointer;;
+  }
+  
+  button:hover {
+    color: white;
+    background-color: #00F6FF;
+  }
+  
+  #musicPlay{
+    display: inline-block; 
+      padding-right:5%;
+      padding-left: 5%;
+  
+  }
+  
+/*************************************** MUSIC Section ******************************************/
+
+
+/*************************************** BIO Section ******************************************/
+
+
+/*************************************** PROJECTS Section ******************************************/
+#picProjects img{
+  padding-right: 40px;
+
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills ul li{
+  color: white;
+  width: 33.3%;
+  box-sizing: border-box;
+  border-style: solid;
+  border-color: #00F6FF;
+  border-width: medium;
+}
+.skills a:hover{
+  color: #00F6FF;
+  font-size: larger;
+  
+}
+.skills a{
+  color: white;
+}
+/*************************************** PROJECTS Section ******************************************/
+
+/*************************************** QUALIFICATIONS Section ******************************************/
+.education{
+  overflow: scroll;
+  display: grid;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  height: auto;
+}
+
+.qualification {
+  
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-column-gap: 40px;
+  justify-self: center;
+  align-self: center;
+  width: fit-content;
+  padding: 20px;
+  margin-top: 5%;
+  font-size: 25px;
+  
+}
+.answers{
+  border-style: solid;
+  border-color: #00F6FF;
+  border-width: medium;
+  color: white;
+}
+.labeling{
+  border-style: solid;
+  border-color: #00F6FF;
+  border-width: medium;
+  color: white;
+}
+/*************************************** QUALIFICATIONS Section ******************************************/
+
+
+ 
+
+
+
+
+
+/*************************************** Media screens ******************************************/
 
 
   @media screen and (max-width: 1169px){
@@ -670,5 +666,9 @@ header {
       }
      
    }
+
+
+/*************************************** Media screens ******************************************/
+  
 
 
