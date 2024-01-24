@@ -57,7 +57,7 @@ body {
   
    video {
   
-    width: 15%;
+    width: 13%;
     height: auto;
     padding-bottom: auto;
     background-color: black;
@@ -259,7 +259,12 @@ label {
 .form-group {
   margin-bottom: 15px;
 }
+.emails{
+  align-items: center;
+  display: inline-block; 
+  color: white;
 
+}
 
 input,
 textarea {
