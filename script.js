@@ -1,4 +1,20 @@
+function scrollToSection(sectionId) {
+  const section = document.getElementById(sectionId);
 
+  if (section) {
+    const navbarHeight = document.querySelector('nav').offsetHeight;
+    const sectionTop = section.offsetTop - navbarHeight;
+
+    window.scrollTo({
+      top: sectionTop,
+      behavior: 'smooth'
+    });
+  }
+}
+function toggleMenu() {
+  const menu = document.querySelector('ul');
+  menu.classList.toggle('open');
+}
 
 function playMusic() {
   let mySong = document.getElementById("mySongs");

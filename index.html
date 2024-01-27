@@ -9,11 +9,13 @@
     <script src="database.js"></script>
     <link rel="icon" href="media/logo2.png" />
     <link href='https://fonts.googleapis.com/css?family=Gruppo' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width" />
     <meta charset="UTF-8" />
   </head>
 
   <body>
+    <div class="screens">
 
 <!-----------------------------------Loading Screen ------------------------------------------>
     <header></header>
@@ -26,26 +28,31 @@
 <!-----------------------------------End of Loading Screen ------------------------------------------>
 
 
-
-    <div class="container">
  <!----------------------------------- Home Section ------------------------------------------>
+ <nav>
+  <a href="#home">
 
+  <img src="media/logo.png" alt="logo" class="logo"
+  width="150"
+    height="150"
+  >
+</a>
+<div class="hamburger">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+<ul class="nav-menu">
+  
+<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+ <li class="nav-item"><a href="#Bio" class="nav-link">Bio</a></li>
+  <li class="nav-item"><a href="#Skills" class="nav-link">Projects</a></li>
+  <li class="nav-item"><a href="#Qualifications" class="nav-link">Qualifications</a></li>
+   <li class="nav-item"><a href="#Projects" class="nav-link">Contact Me</a></li>
+</ul>
+</nav>
         <div class="hero" id="home">
-          <nav>
-            <a href="#home">
-            <img src="media/logo.png" alt="logo"
-            width="150"
-              height="150"
-            >
-          </a>
-        <ul>
-          <li><a href="#home" >Home</a></li>
-           <li><a href="#Bio" >Bio</a></li>
-            <li><a href="#Skills" >Projects</a></li>
-            <li><a href="#Qualifications" >Qualifications</a></li>
-             <li><a href="#Projects" >Contact Me</a></li>
-        </ul>
-        </nav>
+          
         
         <div class="details">
           <h1>Hi, I'm Mxolisi <span>Sibaya</span></h1>
@@ -103,10 +110,10 @@
 
 <!-----------------------------------Bio Section ------------------------------------------>
 
-     <div class="Biobackground">
+     <!-- <div class="Biobackground"> -->
 
      <section id="Bio" >
-        <nav>
+        <!-- <nav>
           <a href="#home">
             <img src="media/logo.png" alt="logo"
           width="150"
@@ -120,7 +127,7 @@
             <li><a href="#Qualifications" >Qualifications</a></li>
              <li><a href="#Projects" >Contact Me</a></li>
         </ul>
-        </nav>
+        </nav> -->
      <div class="tab">
       <div class="qualitiesLink">
          <div class="qualities">
@@ -164,7 +171,7 @@
      <div id="hacka">
       <h2 class="SubTopics">HACKATHONS</h2>
       <br>
-      <p>In my spare time, I enoy staying in the know about the tech landscape by attending tech events as well as 
+      <p>In my spare time, I enjoy staying in the know about the tech landscape by attending tech events as well as 
         participating in hackathons to strengthen my ability in teamwork and using my abilities to solve real life problems using 
         collaboration and critical thinking.
 
@@ -251,28 +258,13 @@
           
           
         
-    </div>
+    <!-- </div> -->
 <!-----------------------------------End of Bio Section ------------------------------------------>
 
 <!-----------------------------------PROJECTS Section ------------------------------------------>
 
-    <div class="Biobackground">
+    
      <section id="Skills" >
-         <nav>
-          <a href="#home">
-            <img src="media/logo.png" alt="logo"
-            width="150"
-              height="150"
-            >
-          </a>
-        <ul>
-          <li><a href="#home" >Home</a></li>
-           <li><a href="#Bio" >Bio</a></li>
-            <li><a href="#Skills" >Projects</a></li>
-            <li><a href="#Qualifications" >Qualifications</a></li>
-             <li><a href="#Projects" >Contact Me</a></li>
-        </ul>
-        </nav>
        <div class="tab">
       
       <br><br>
@@ -307,23 +299,10 @@
 
      <section id="Qualifications" >
       <!-----------------------------------Qualifications Section ------------------------------------------>
-        <nav>
-          <a href="#home">
-            <img src="media/logo.png" alt="logo"
-            width="150"
-              height="150"
-            ></a>
-        <ul>
-          <li><a href="#home" >Home</a></li>
-           <li><a href="#Bio" >Bio</a></li>
-            <li><a href="#Skills" >Projects</a></li>
-            <li><a href="#Qualifications" >Qualifications</a></li>
-             <li><a href="#Projects" >Contact Me</a></li>
-        </ul>
-        </nav>
      <div class="tab">
-        <h1 class="SubTopics">EDUCATIONAL QUALIFICATIONS <br><br>.</h1>  <br>
+        
         <div class="education">
+          <h1 class="SubTopics">EDUCATIONAL QUALIFICATIONS </h1>  <br>
           <b><h2 class="SubTopics">Systems Dev</h2> </b>
         <div class="qualification"> 
           
@@ -368,14 +347,14 @@
      </section>
       <!-----------------------------------End of Qualifications Section ------------------------------------------>
 
-    </div>
+  
 
 <!-----------------------------------End of PROJECTS Section ------------------------------------------>
 
 <!-----------------------------------Contact Me Section ------------------------------------------>
 
      <section id="Projects" >
-     <nav>
+     <!-- <nav>
         <a href="#home">
             <img src="media/logo.png" alt="logo"
           width="150"
@@ -388,7 +367,7 @@
             <li><a href="#Qualifications" >Qualifications</a></li>
              <li><a href="#Projects" >Contact Me</a></li>
         </ul>
-        </nav>
+        </nav> -->
      <div class="tab">
           
         <div class="container">
@@ -430,8 +409,8 @@
     </footer>
      </section>
 <!-----------------------------------End of Contact Me Section ------------------------------------------>
-
-     
+</div>
+    
      
     
 </html>
