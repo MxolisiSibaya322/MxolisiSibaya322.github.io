@@ -32,6 +32,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   color: white;
+  overflow: scroll;
   
 }
 h2 , h1{
@@ -58,7 +59,6 @@ h2 , h1{
   .SubTopics {
     background-color: #00F6FF;
     text-align: center;
-    overflow: hidden;
   }
   .menu-icon {
     display: none; 
@@ -75,20 +75,6 @@ h2 , h1{
   .mobile-menu {
     display: none;
   }
-  /* .hamburger{
-    display:  none;
-    cursor: pointer;
-    padding-top: 25px;
-    padding-right: 30px;
-  }
-  .bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px;
-    color: white;
-    background-color: white;
-  } */
   .hamburger {
     width: 30px;
     height: 3px;
@@ -127,7 +113,6 @@ h2 , h1{
   scroll-margin-top: 10%;
   margin-top: 10%; 
   position :relative;
-  overflow: hidden;
 } 
 .tab p{
   color: white;
@@ -196,7 +181,6 @@ section{
   font-size: 40px;
   color: white;
   margin-bottom: 20px;
-   overflow: hidden; 
   border-right: .15em solid black;
   white-space: nowrap; 
   margin: auto 0; 
@@ -280,7 +264,6 @@ animation-name: movement;
 }
 .logoz a {
   display: inline-block;
-  overflow: hidden;
   position: relative;
 }
 
