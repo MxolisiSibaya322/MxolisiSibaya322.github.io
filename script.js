@@ -1,20 +1,20 @@
-function scrollToSection(sectionId) {
-  const section = document.getElementById(sectionId);
 
-  if (section) {
-    const navbarHeight = document.querySelector('nav').offsetHeight;
-    const sectionTop = section.offsetTop - navbarHeight;
+document.addEventListener('DOMContentLoaded', function() {
+document.querySelector('.mobile-menu').addEventListener('click', function() {
+  this.classList.toggle('open');
+  document.querySelector('.nav-menu').classList.toggle('open');
+});
+const navLinks = document.querySelectorAll('.nav-menu li a');
 
-    window.scrollTo({
-      top: sectionTop,
-      behavior: 'smooth'
-    });
-  }
-}
-function toggleMenu() {
-  const menu = document.querySelector('ul');
-  menu.classList.toggle('open');
-}
+
+navLinks.forEach(link => {
+  link.addEventListener('click', function() {
+    document.querySelector('.nav-menu').classList.toggle('open');
+    document.querySelector('.mobile-menu').classList.toggle('open');
+  });
+});
+});
+
 
 function playMusic() {
   let mySong = document.getElementById("mySongs");

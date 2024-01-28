@@ -31,8 +31,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
- 
+  color: white;
   
+}
+h2 , h1{
+  color: black;
 }
 
   .container{
@@ -69,9 +72,14 @@ body {
     padding-bottom: auto;
     background-color: black;
   }
-  .hamburger{
+  .mobile-menu {
     display: none;
+  }
+  /* .hamburger{
+    display:  none;
     cursor: pointer;
+    padding-top: 25px;
+    padding-right: 30px;
   }
   .bar{
     display: block;
@@ -79,6 +87,31 @@ body {
     height: 3px;
     margin: 5px;
     color: white;
+    background-color: white;
+  } */
+  .hamburger {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: relative;
+    transition: transform 0.4s ease;
+  }
+  
+  .hamburger:before,
+  .hamburger:after {
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+  }
+  
+  .hamburger:before {
+    top: -10px;
+  }
+  
+  .hamburger:after {
+    top: 10px;
   }
 /*************************************** Docment Settings ******************************************/
 
@@ -660,18 +693,53 @@ header {
     nav{
       height: 10%;
     }
-    nav ul li{
-      left: 1000;
-      flex-direction:column ;
-      
+    .nav-menu {
+      display: none;
+      text-align: center;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      padding: 10px 0;
+      box-sizing: border-box;
+      z-index: 1500;
     }
-    .hamburger{
+    .nav-menu.open {
+      display: none;
+    }
+  
+    .nav-menu.open li {
+      margin: 10px 0;
+    }
+    /* .hamburger{
       display: block;
+    } */
+    .mobile-menu {
+      display: block;
+      cursor: pointer;
+      padding: 30px 30px;
+    }
+  
+    .open {
+      display: block;
+    }
+  
+    .open:before {
+      top: 0;
+      display: none;
+    }
+  
+    .open:after {
+      top: 0;
+     display: none;
     }
     .logo {
 
-      width: 125%;
-      height: 125%;
+      width: 130%;
+      height: 135%;
     }
 
 
