@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    hideLoadingOverlay();
+    // hideLoadingOverlay();
     const firebaseConfig = {
         apiKey: "AIzaSyArLH_GYyAQTwsEA3vJwldOUvTUbUUZ3UY",
         authDomain: "personal-website-8a5e8.firebaseapp.com",
@@ -52,6 +52,6 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   window.addEventListener("load", function () {
-    hideLoadingOverlay();
+    // hideLoadingOverlay();
   });
 

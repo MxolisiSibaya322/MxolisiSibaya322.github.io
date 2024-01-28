@@ -1,5 +1,10 @@
-
 document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('loading-video').addEventListener('ended', function() {
+    var videoContainer = document.getElementById('loading-overlay');
+    var content = document.getElementById('screens');
+    videoContainer.style.display = 'none';
+    // content.style.display = 'flex';
+  });
 document.querySelector('.mobile-menu').addEventListener('click', function() {
   this.classList.toggle('open');
   document.querySelector('.nav-menu').classList.toggle('open');
