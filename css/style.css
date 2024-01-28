@@ -173,26 +173,36 @@ section{
 .details span {
   font-family: "Source_Code_Pro";
 }
+@keyframes typing {
+  from { width: 0; border-right-width: 0; }
+  to { width: 100%; border-right-width: .15em; }
+}
 
-.details h1{
-  animation: typing 3.5s steps(30, end),    blink-caret .5s step-end infinite;
+@keyframes blink-caret {
+  50% { opacity: 0; }
+}
+
+.details h1 {
   font-family: "Source_Code_Pro";
   font-size: 40px;
   color: white;
   margin-bottom: 20px;
-  border-right: .15em solid black;
-  white-space: nowrap; 
-  margin: auto 0; 
-  
-}
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  white-space: nowrap;
+  margin: auto 0;
+  overflow: hidden;
+  display: inline-block;
+  animation: typing 3.5s steps(30, end) forwards;
+  border-right: none;
+  position: relative;
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black }
+.details h1::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 2px;
+  animation: blink-caret 1s step-end infinite; /* Adjust the duration here */
 }
 .details a{
   background: black;
