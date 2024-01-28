@@ -8,8 +8,8 @@ const navLinks = document.querySelectorAll('.nav-menu li a');
 
 navLinks.forEach(link => {
   link.addEventListener('click', function() {
-    document.querySelector('.nav-menu').classList.toggle('open');
-    document.querySelector('.mobile-menu').classList.toggle('open');
+    document.querySelector('.nav-menu').classList.remove('open');
+    document.querySelector('.mobile-menu').classList.remove('open');
   });
 });
 });
