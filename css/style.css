@@ -126,10 +126,6 @@ h2 , h1{
   height: 100%; 
   scroll-margin-top: 10%;
   margin-top: 10%; 
-  /* height: 100vh; */
- /* background-image: url('../media/background.png'); */
-  /* background-size: cover; */
-  /* background-position :center; */
  position :relative;
   overflow: hidden;
 } 
@@ -690,11 +686,12 @@ header {
 
    }
    @media screen and (max-width: 800px){
-    nav{
-      height: 10%;
-    }
     .nav-menu {
+      
       display: none;
+    }
+    .nav-menu.open {
+      display: block;
       text-align: center;
       position: absolute;
       display: flex;
@@ -706,9 +703,6 @@ header {
       padding: 10px 0;
       box-sizing: border-box;
       z-index: 1500;
-    }
-    .nav-menu.open {
-      display: none;
     }
   
     .nav-menu.open li {
@@ -736,11 +730,12 @@ header {
       top: 0;
      display: none;
     }
-    .logo {
+    /* .logo {
 
-      width: 130%;
-      height: 135%;
-    }
+      width: 150%;
+      height: 150%;
+      padding-bottom: 30px;
+    } */
 
 
    }
