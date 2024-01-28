@@ -32,7 +32,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   color: white;
-  overflow: scroll;
+  overflow-x: scroll;
   
 }
 h2 , h1{
@@ -339,24 +339,14 @@ textarea {
 
 
 /*************************************** BIO Section ******************************************/
-/* .qualitiesLink{
-  overflow: scroll;
-  scroll-behavior: smooth; 
-} */
+
 .bioPic image{
   width: 10%;
   justify-items: center;
   
 }
 
-.qualities{
-  justify-self: center;
-  align-self: center;
-  background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
+
 .textBG{
   width: 40%;
   float: right;
