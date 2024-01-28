@@ -700,6 +700,10 @@ header {
    }
 
    @media screen and (max-width: 520px){
+    .images {
+      bottom: 20%;
+      
+    }
 
    .details h1{
     font-size: 18px;
