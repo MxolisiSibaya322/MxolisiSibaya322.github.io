@@ -323,7 +323,7 @@ textarea {
 /*************************************** BIO Section ******************************************/
 
 .bioPic image{
-  width: 5%;
+  width: 10%;
   justify-items: center;
   
 }
@@ -527,8 +527,20 @@ button {
 
 /*************************************** Media screens ******************************************/
 
+@media screen and (max-width: 1315px){
+  .textBG{
+    width: 100%;
+    float: none;
+  
+   }
+  .bioText{
+    width: 100%;
+    float: none;
+  }
 
+}
   @media screen and (max-width: 1169px){
+    
     .images{
   width: 15%;
   height: 60%;
@@ -599,7 +611,7 @@ header {
       top: 100%;
       left: 0;
       width: 100%;
-      background-color: #333;
+      background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
       padding: 10px 0;
       box-sizing: border-box;
       z-index: 1500;
