@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // hideLoadingOverlay();
     const firebaseConfig = {
         apiKey: "AIzaSyArLH_GYyAQTwsEA3vJwldOUvTUbUUZ3UY",
         authDomain: "personal-website-8a5e8.firebaseapp.com",
@@ -9,10 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         appId: "1:179188612553:web:5cbef48153988879f6fc18"
       };
       firebase.initializeApp(firebaseConfig);
-
-      
       let firestore = firebase.firestore();
-    
       
       document.querySelector('.contact-form').addEventListener('submit', function (e) {
         e.preventDefault();
@@ -26,8 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         console.log(email);
         // email.replace(/[.#$/[\] ]/g, "_")
         let contactRef = firestore.collection('contacts').doc();
-    
-        
+           
         contactRef.set({
           fullName: fullName,
           email: email,
@@ -46,12 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
 
-  function hideLoadingOverlay() {
-   
-    document.getElementById('loading-overlay').style.display = 'none';
-  }
 
-  window.addEventListener("load", function () {
-    // hideLoadingOverlay();
-  });
+
 

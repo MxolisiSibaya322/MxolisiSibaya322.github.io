@@ -129,7 +129,6 @@ h2 , h1{
 nav{
   background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
   display: flex;
-  /* margin: auto; */
   height: 15%;
   padding: 20px 0;
   align-content: center;
@@ -156,7 +155,6 @@ section{
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* width: 100%; */
  
 }
 /*************************************** Tab Settings ******************************************/
@@ -177,6 +175,7 @@ section{
 }
 
 .details h1{
+  animation: typing 3.5s steps(30, end),    blink-caret .5s step-end infinite;
   font-family: "Source_Code_Pro";
   font-size: 40px;
   color: white;
@@ -184,10 +183,7 @@ section{
   border-right: .15em solid black;
   white-space: nowrap; 
   margin: auto 0; 
- 
-   animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .5s step-end infinite;
+  
 }
 @keyframes typing {
   from { width: 0 }
@@ -215,11 +211,6 @@ section{
   color:black;
 }   
 .iconDetails{
-  /* 
-  font-family: "Source_Code_Pro";
-  margin-left: 6%;
-  margin-right: 22%;
-  margin-top: 20%;*/
   margin-left: 6%;
   
 }         
@@ -266,8 +257,6 @@ animation-name: movement;
   display: inline-block;
   position: relative;
 }
-
-
 .iconDetails a img {
   transition: transform 0.3s ease-in-out;
 }
@@ -283,8 +272,6 @@ animation-name: movement;
 }
 
 /*************************************** Home Section ******************************************/
-
-
 
 /*************************************** Contact Me Section ******************************************/
 
@@ -311,7 +298,6 @@ textarea {
   margin-top: 5px;
   font-size: 16px;
   resize: none;
-  /* overflow: scroll; */
 }
 .contact-form {
   padding-top: 20px;
@@ -334,14 +320,10 @@ textarea {
 /*************************************** Contact Me Section ******************************************/
 
 
-
-
-
-
 /*************************************** BIO Section ******************************************/
 
 .bioPic image{
-  width: 10%;
+  width: 5%;
   justify-items: center;
   
 }
@@ -440,8 +422,6 @@ button {
  cursor: pointer;
   text-align: center;
 }
-
-
 
   #play {
     cursor: pointer;
@@ -543,12 +523,6 @@ button {
   color: white;
 }
 /*************************************** QUALIFICATIONS Section ******************************************/
-
-
- 
-
-
-
 
 
 /*************************************** Media screens ******************************************/
@@ -726,8 +700,4 @@ header {
      
    }
 
-
 /*************************************** Media screens ******************************************/
-  
-
-
