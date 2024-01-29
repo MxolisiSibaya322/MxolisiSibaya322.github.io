@@ -27,7 +27,8 @@ body {
   line-height: 1.6;
   min-height: 100vh;
   background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
-}.screens{
+}
+.screens{
   display: flex;
   flex-direction: column;
   flex-grow: 1;
