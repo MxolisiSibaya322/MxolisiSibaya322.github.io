@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+  //mobile bar toogle 
 document.querySelector('.mobile-menu').addEventListener('click', function() {
   this.classList.toggle('open');
   document.querySelector('.nav-menu').classList.toggle('open');
@@ -12,10 +14,45 @@ navLinks.forEach(link => {
     document.querySelector('.mobile-menu').classList.remove('open');
   });
 });
+
+// photo slideshow
+let currentPhoto = 0;
+const photos = document.querySelectorAll('#gallery img');
+const intervalTime = 3500; 
+
+function showPhoto(index) {
+  photos.forEach((photo, i) => {
+    if (i === index) {
+      photo.style.display = 'flex';
+    } else {
+      photo.style.display = 'none';
+    }
+  });
+}
+
+function prevPhoto() {
+  currentPhoto = (currentPhoto - 1 + photos.length) % photos.length;
+  showPhoto(currentPhoto);
+}
+
+function nextPhoto() {
+  currentPhoto = (currentPhoto + 1) % photos.length;
+  showPhoto(currentPhoto);
+}
+
+function startSlideshow() {
+  setInterval(nextPhoto, intervalTime);
+}
+
+document.getElementById('prev').addEventListener('click', prevPhoto);
+document.getElementById('next').addEventListener('click', nextPhoto);
+
+showPhoto(currentPhoto);
+startSlideshow();
 });
 
-
 function playMusic() {
+  // music player
   let mySong = document.getElementById("mySongs");
   let stop1 = document.getElementById("stop1");
   let stop2 = document.getElementById("stop2");

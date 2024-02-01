@@ -40,66 +40,66 @@ h2 , h1{
   color: black;
 }
 
-  .container{
-    height: 100%;
-    width: 100%;
-  }
+.container{
+  height: 100%;
+  width: 100%;
+}
 
-  button {
+button {
 
-    align-self: center;
-    width: 50%;
-    background-color: black;
-    color: #fff;
-    padding: 2px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  .SubTopics {
-    background-color: #00F6FF;
-    text-align: center;
-  }
-  .menu-icon {
-    display: none; 
-    cursor: pointer;
-  }
-  
-   video {
-  
-    width: 13%;
-    height: auto;
-    padding-bottom: auto;
-    background-color: black;
-  }
-  .mobile-menu {
-    display: none;
-  }
-  .hamburger {
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    position: relative;
-    transition: transform 0.4s ease;
-  }
-  
-  .hamburger:before,
-  .hamburger:after {
-    content: '';
-    width: 30px;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-  }
-  
-  .hamburger:before {
-    top: -10px;
-  }
-  
-  .hamburger:after {
-    top: 10px;
-  }
+  align-self: center;
+  width: 50%;
+  background-color: black;
+  color: #fff;
+  padding: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.SubTopics {
+  background-color: #00F6FF;
+  text-align: center;
+}
+.menu-icon {
+  display: none; 
+  cursor: pointer;
+}
+
+  video {
+
+  width: 13%;
+  height: auto;
+  padding-bottom: auto;
+  background-color: black;
+}
+.mobile-menu {
+  display: none;
+}
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+
+.hamburger:before,
+.hamburger:after {
+  content: '';
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.hamburger:before {
+  top: -10px;
+}
+
+.hamburger:after {
+  top: 10px;
+}
 /*************************************** Docment Settings ******************************************/
 
 
@@ -203,7 +203,7 @@ section{
   top: 0;
   right: 0;
   margin-left: 2px;
-  animation: blink-caret 1s step-end infinite; /* Adjust the duration here */
+  animation: blink-caret 1s step-end infinite; 
 }
 .details a{
   background: black;
@@ -338,6 +338,23 @@ textarea {
   justify-items: center;
   
 }
+.photoButtons button{
+  display: inline;
+  width: 2%;
+  align-items: center;
+
+}
+#gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+#gallery img {
+  max-width: 100%;
+  max-height: 100%;
+  display: none;
+}
 
 
 .textBG{
@@ -347,7 +364,7 @@ textarea {
   font-family: "Source_Code_Pro";
   box-shadow: 0 4px 8px 0 #00F6FF;
   border-color: #00F6FF;
-  
+  font-size: small;
   border-style: solid;
   border-width: thick;
   transition: 0.3s;
@@ -359,6 +376,7 @@ textarea {
   float: left;
   font-weight: bold;
   font-family: "Source_Code_Pro";
+  font-size: small;
   box-shadow: 0 4px 8px 0 #00F6FF;
   border-color: #00F6FF;
   
@@ -434,31 +452,31 @@ button {
   text-align: center;
 }
 
-  #play {
-    cursor: pointer;
-    width: "40";
-    height: "50";
-  }
-  #play2 {
-    cursor: pointer;
-  }
-  .musicButtons button{
-    display: inline;
-    align-self: center;
-    width: 20%;
-    background-color: black;
-    color: #fff;
-    padding: 2px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  
-  button:hover {
-    color: white;
-    background-color: #00F6FF;
-  }
+#play {
+  cursor: pointer;
+  width: "40";
+  height: "50";
+}
+#play2 {
+  cursor: pointer;
+}
+.musicButtons button{
+  display: inline;
+  align-self: center;
+  width: 20%;
+  background-color: black;
+  color: #fff;
+  padding: 2px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  color: white;
+  background-color: #00F6FF;
+}
   
 
   
@@ -541,186 +559,197 @@ button {
 @media screen and (max-width: 1315px){
   .textBG{
     width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     float: none;
   
    }
   .bioText{
     width: 100%;
+    max-width: 100%;
+    max-height: 100%;
     float: none;
   }
 
 }
-  @media screen and (max-width: 1169px){
-    
-    .images{
-  width: 15%;
-  height: 60%;
-  position: absolute;
-  bottom: 0%;
-  right: 100px;
+@media screen and (max-width: 1169px){
+  
+  .images{
+width: 15%;
+height: 60%;
+position: absolute;
+bottom: 0%;
+right: 100px;
 }
 
 
 .qualification{
-   grid-column-gap: 20px;
-   padding: 10px;
-    font-size: 15px;
-     grid-template-columns: 150px 150px;
-     
-     font-size: large;
-     font-weight: bold;
-  
-  
+  grid-column-gap: 20px;
+  padding: 10px;
+  font-size: 15px;
+    grid-template-columns: 150px 150px;
+    
+    font-size: large;
+    font-weight: bold;
+
+
 }
 
 header {
-  /* background-color: #333;
-  color: #fff; */
-  padding: 10px;
-  position: fixed;
+/* background-color: #333;
+color: #fff; */
+padding: 10px;
+position: fixed;
+width: 100%;
+top: 0;
+z-index: 1000;
+}
+
+
+}
+@media screen and (max-width: 877px){
+.hero{
+  scroll-margin-top: 10%;
+margin-top: 10%; 
+}
+
+  
+  .details h1{
+font-size: 28px;
+  }
+  .skills ul li{
+    color: white;
+    width: 100%;
+    /* box-sizing: border-box; */
+  }
+  #musicTab{
+    overflow: scroll;
+    align-items: center;
+  }
+  .projects{
+    overflow: scroll;
+  }
+
+}
+@media screen and (max-width: 800px){
+.nav-menu {
+  display: none;
+}
+.nav-menu.open {
+  display: block;
+  text-align: center;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 100%;
+  left: 0;
   width: 100%;
+  background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
+  padding: 10px 0;
+  box-sizing: border-box;
+  z-index: 1500;
+}
+
+.nav-menu.open li {
+  margin: 10px 0;
+}
+.mobile-menu {
+  display: block;
+  cursor: pointer;
+  padding: 30px 30px;
+}
+
+.open {
+  display: block;
+}
+
+.open:before {
   top: 0;
-  z-index: 1000;
+  display: none;
+}
+
+.open:after {
+  top: 0;
+  display: none;
+}
+/* .logo {
+
+  width: 150%;
+  height: 150%;
+  padding-bottom: 30px;
+} */
+
+
+}
+
+@media screen and (max-width: 598px){
+nav ul li a{
+  font-size: smaller;
+}
+.hero{
+  scroll-margin-top: 30%;
+margin-top: 30%; 
+}
+.images{
+    width: 12%;
+    height: 50%;
+  }
+video{
+  height: auto;
+  width: 25%;
+}
+.emails p{
+  font-size: smaller;
 }
 
 
+.textBG{
+  width: 100%;
+  float: none;
+
   }
-   @media screen and (max-width: 877px){
-    .hero{
-      scroll-margin-top: 10%;
-  margin-top: 10%; 
-    }
-   
-      
-      .details h1{
-  font-size: 28px;
-      }
-      .skills ul li{
-        color: white;
-        width: 100%;
-        /* box-sizing: border-box; */
-      }
-      #musicTab{
-        overflow: scroll;
-        align-items: center;
-      }
-      .projects{
-        overflow: scroll;
-      }
 
-   }
-   @media screen and (max-width: 800px){
-    .nav-menu {
-      display: none;
-    }
-    .nav-menu.open {
-      display: block;
-      text-align: center;
-      position: absolute;
-      display: flex;
-      flex-direction: column;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background: linear-gradient(to bottom right, #0C1E1E, #1F3A47);
-      padding: 10px 0;
-      box-sizing: border-box;
-      z-index: 1500;
-    }
-  
-    .nav-menu.open li {
-      margin: 10px 0;
-    }
-    /* .hamburger{
-      display: block;
-    } */
-    .mobile-menu {
-      display: block;
-      cursor: pointer;
-      padding: 30px 30px;
-    }
-  
-    .open {
-      display: block;
-    }
-  
-    .open:before {
-      top: 0;
-      display: none;
-    }
-  
-    .open:after {
-      top: 0;
-     display: none;
-    }
-    /* .logo {
-
-      width: 150%;
-      height: 150%;
-      padding-bottom: 30px;
-    } */
-
-
-   }
-
-   @media screen and (max-width: 598px){
-    nav ul li a{
-      font-size: smaller;
-    }
-    .hero{
-      scroll-margin-top: 30%;
-  margin-top: 30%; 
-    }
-    .images{
-        width: 12%;
-        height: 50%;
-      }
-    video{
-      height: auto;
-      width: 25%;
-    }
-    .emails p{
-      font-size: smaller;
-    }
-    
-    
-    .textBG{
-      width: 100%;
-      float: none;
-    
-     }
-    
-    .bioText{
-      width: 100%;
-      float: none;
-    }
-   }
-
-   @media screen and (max-width: 520px){
-    .images {
-      bottom: 28%;
-      
-    }
-
-   .details h1{
-    font-size: 18px;
-        }
-
-  .details p{
-    font-size: 15px;
-  }
+.bioText{
+  width: 100%;
+  float: none;
 }
-   @media screen and (max-width: 390px){
-    .hero{
-      scroll-margin-top: 50%;
+}
+
+@media screen and (max-width: 520px){
+.images {
+  bottom: 28%;
+}
+
+.details h1{
+font-size: 18px;
+    }
+
+.details p{
+font-size: 15px;
+}
+}
+@media screen and (max-width: 390px){
+.hero{
+  scroll-margin-top: 50%;
   margin-top: 50%; 
-    }
+}
 
-    .images{
-        width: 18%;
-        height: 35%;
-      }
-     
-   }
+.images{
+    width: 18%;
+    height: 35%;
+  }
+  
+}
+
+@media screen and (max-width: 300px) {
+  .details h1{
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 250px) {
+  body {
+    min-width: 250px; 
+  }
+}
 
 /*************************************** Media screens ******************************************/

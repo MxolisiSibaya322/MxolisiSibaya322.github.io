@@ -116,7 +116,7 @@
                I blend technical expertise with a relentless curiosity.
                 Eager to adapt and evolve, I bring a fresh perspective to every project,
                  embracing emerging technologies to create impactful solutions.
-            </p><br> <br>
+            </p>
            </div>
            
            <div class="textBG">
@@ -124,33 +124,36 @@
               <p>Raised in Orlando West, Soweto, I hail from a culturally diverse community, 
               fostering an early appreciation for various traditions. This upbringing instilled in me 
               a natural inclination towards accommodation and understanding. Engaging in a range of 
-              extracurricular activities enriched my experiences. Explore my top three hobbies below :</p> <br> <br>
+              extracurricular activities enriched my experiences. Explore my top three hobbies below :</p> 
             </div>
             <div class="bioPic">
-              <img src="media/MUGSHOT.png" height="190" width="190" alt="Mxolisi portrait">
+              <img src="media/mxo.png" height="auto" width="230" alt="Mxolisi portrait">
              </div>
               <br><br><br>
 
-     <div id="hacka">
+
       <h2 class="SubTopics">HACKATHONS</h2>
       <br>
       <p>In my spare time, I enjoy staying in the know about the tech landscape by attending tech events as well as 
         participating in hackathons to strengthen my ability in teamwork and using my abilities to solve real life problems using 
-        collaboration and critical thinking.
+        collaboration and critical thinking.</p>
 
 
         <br><br>
-
+        <div id="gallery">
         <img src="media/hack1.JPG" alt="hackathon-pic" width="450"> 
         <img src="media/hack2.JPG" alt="hackathon-pic" width="450"> 
         <img src="media/hack3.jpg" alt="hackathon-pic" width="450"> 
         <img src="media/hack4.jpg" alt="hackathon-pic" width="450"> 
         <img src="media/hack5.jpg" alt="hackathon-pic" width="450"> 
         <img src="media/hack6.jpg" alt="hackathon-pic" width="450"> 
-      </p>
+      </div>
+      <div class="photoButtons">
+      <button id="prev">&lt;</button>
+      <button id="next">&gt;</button>
+    </div>
 
-     </div>
-     <div id="soccer">
+      
       <h2 class="SubTopics">SOCCER</h2>
       <br><br>
       <p>When I do get the time, I enjoy watching
@@ -159,8 +162,7 @@
       <img src="media/MAN.png" alt=""width="110">
       <img src="media/OP.png" alt=""width="110">
       <img src="media/barca.png" alt=""width="110">
-
-     </div>       
+   
             
      <div id="musicTab">
       <h1 class="SubTopics">Music</h1>
@@ -203,8 +205,8 @@
               <button id="stop2" onclick=playMusic()  Stop &#9611
               >Stop &#9611</button></p>
           </div>
-          <img src="media/studio.png" height="290" 
-          ><br><br>
+          <!-- <img src="media/studio.png" height="290"  -->
+          <br><br>
              
        </div>
             
@@ -313,16 +315,13 @@
         <div class="container">
           <form class="contact-form">
             <div class="form-group">
-              <label for="full-name" >Full Name</label>
-              <input type="text" id="full-name" name="full-name" required>
+              <input type="text" placeholder="Full Name" id="full-name" name="full-name" required>
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" required>
+              <input type="email" placeholder="Email" id="email" name="email" required>
             </div>
             <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="4" required></textarea>
+              <textarea id="message" placeholder="Message" name="message" rows="4" required></textarea>
             </div>
             <button type="submit">Send Message</button>
           </form>
