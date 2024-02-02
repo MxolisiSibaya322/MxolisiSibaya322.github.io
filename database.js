@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let message = document.getElementById('message').value;
     
         
-        console.log(email);
+        // console.log(email);
         // email.replace(/[.#$/[\] ]/g, "_")
         let contactRef = firestore.collection('contacts').doc();
            
