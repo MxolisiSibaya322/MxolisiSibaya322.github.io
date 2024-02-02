@@ -530,7 +530,7 @@ button:hover {
   
   display: grid;
   grid-template-columns: 300px 300px;
-  grid-column-gap: 40px;
+  grid-column-gap: 5px;
   justify-self: center;
   align-self: center;
   width: fit-content;
