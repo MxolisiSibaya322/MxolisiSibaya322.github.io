@@ -7,7 +7,15 @@ document.querySelector('.mobile-menu').addEventListener('click', function() {
 });
 const navLinks = document.querySelectorAll('.nav-menu li a');
 
-
+//time display
+function updateTime() {
+  const now = new Date();
+  const options = { hour: '2-digit', minute: '2-digit', second: '2-digit' };
+  const timeString = now.toLocaleTimeString([], options);
+  document.querySelector('.time').textContent = `${timeString}  CAT`;
+  setTimeout(updateTime, 1000); // Update every second
+}
+updateTime();
 navLinks.forEach(link => {
   link.addEventListener('click', function() {
     document.querySelector('.nav-menu').classList.remove('open');
