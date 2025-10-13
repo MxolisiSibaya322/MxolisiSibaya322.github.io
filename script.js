@@ -100,3 +100,101 @@ function playMusic() {
 function openInNewTab(route){
   window.open(route, '_blank').focus();
 }
+
+// Chatbot functionality
+document.addEventListener('DOMContentLoaded', () => {
+  const chatBox = document.getElementById('chatBox');
+  const openChat = document.getElementById('openChat');
+  const closeChat = document.getElementById('closeChat');
+  const chatBody = document.getElementById('chatBody');
+  const userInput = document.getElementById('userInput');
+  const sendBtn = document.getElementById('sendBtn');
+
+  openChat.addEventListener('click', () => {
+    chatBox.style.display = 'flex';
+  });
+
+  closeChat.addEventListener('click', () => {
+    chatBox.style.display = 'none';
+  });
+
+    sendBtn.addEventListener('click', sendMessage);
+    userInput.addEventListener('keypress', e => {
+        if (e.key === 'Enter') sendMessage();
+    });
+
+    async function sendMessage() {
+        const text = userInput.value.trim();
+        if (!text) return;
+        console.log("User message:", text);
+        
+
+        userInput.disabled = true;
+        sendBtn.disabled = true;
+
+        const userMsg = document.createElement('div');
+        userMsg.className = 'user-message';
+        userMsg.textContent = text;
+        chatBody.appendChild(userMsg);
+        userInput.value = '';
+        chatBody.scrollTop = chatBody.scrollHeight;
+        const botMsg = document.createElement('div');
+        botMsg.className = 'bot-message';
+        const loadingImg = document.createElement('img');
+        loadingImg.src = 'media/bot-loading.gif';
+        loadingImg.alt = 'Loading...';
+        loadingImg.style.width = '50px';
+        loadingImg.style.height = 'auto';
+        botMsg.appendChild(loadingImg);
+        chatBody.appendChild(botMsg);
+        chatBody.scrollTop = chatBody.scrollHeight;
+
+        try {
+            const response = await fetch('https://mxolisi-digital-twin.onrender.com/chat', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message: text })
+            });
+
+            const textResp = await response.text();
+            console.log("Response text:", textResp);
+
+  
+            if (!response.ok) {
+                console.error(`Chat service returned HTTP ${response.status}`, textResp);
+                throw new Error(`Chat service HTTP ${response.status}`);
+            }
+
+
+            let data;
+            try {
+                data = JSON.parse(textResp);
+            } catch (e) {
+                try {
+                    data = JSON.parse(JSON.parse(textResp));
+                } catch (e2) {
+                    console.error('Failed to parse bot response:', textResp, e2);
+                    data = null;
+                }
+            }
+
+            const answer = (data && (data.reply || data.answer)) || "Bot did not return a reply.";
+
+            botMsg.innerHTML = '';
+            botMsg.textContent = answer;
+            chatBody.scrollTop = chatBody.scrollHeight;
+
+        } catch (err) {
+            botMsg.innerHTML = '';
+            botMsg.textContent = "Bot is unreachable at the moment, try again later";
+            chatBody.scrollTop = chatBody.scrollHeight;
+            console.error('Error fetching bot response:', err);
+        } finally {
+            userInput.disabled = false;
+            sendBtn.disabled = false;
+            userInput.focus();
+        }
+    };
+});
