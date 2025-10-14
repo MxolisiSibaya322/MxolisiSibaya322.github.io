@@ -786,7 +786,9 @@ font-size: 15px;
 .chatbot button:hover {
   background-color: #1c7a7e;
 }
-
+.vidBack{
+  cursor: default;
+}
 .bot-title{
   color: black;
   text-align: center;
