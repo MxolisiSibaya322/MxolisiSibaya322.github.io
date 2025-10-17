@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', function() {
+ // Navbar shrink on scroll
+  const nav = document.querySelector('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 60) nav.classList.add('shrink');
+    else nav.classList.remove('shrink');
+  });
 
+  // Scroll reveal animation
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) entry.target.classList.add('visible');
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('section, .tab, .hero, .education, .music, .projects, .details')
+    .forEach(el => observer.observe(el));
   //mobile bar toogle 
 document.querySelector('.mobile-menu').addEventListener('click', function() {
   this.classList.toggle('open');
